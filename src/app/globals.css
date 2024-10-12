@@ -11,17 +11,100 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 51, 51, 51;
+    --background-end-rgb: 51, 51, 51;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+p,
+ul,
+li,
+a {
+  font-size: 16px;
+  @apply text-white;
 }
+
+html {
+  scroll-behavior: smooth
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+} */
+
+.app-container {
+  scroll-snap-type: "y proximity";
+  scroll-padding: 10px;
+}
+
+.nav-container,
+.main {
+  max-width: 1400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero {
+  /* height: 100vh; */
+}
+
+/* .progress {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+} */
+
+/* .progress .image-item {
+  transform: translateX(-90%);
+  -webkit-transform: translateX(-90%);
+  -moz-transform: translateX(-90%);
+  -ms-transform: translateX(-90%);
+  -o-transform: translateX(-90%);
+} */
+
+/* 
+::-webkit-scrollbar {
+  height: 12px;
+  width: 5px;
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--background);
+} */
+
+/* .content {
+  position: relative;
+} */
+
+/* .port-article {
+  height: 100vh;
+} */
+
+@media all and (min-width: 640px) {}
+
+@media all and (min-width: 768px) {
+
+  p,
+  ul,
+  li,
+  a {
+    font-size: 18px;
+  }
+}
+
+@media all and (min-width: 1024px) {}
+
+@media all and (min-width: 1280px) {}
+
+@media all and (min-width: 1536px) {}

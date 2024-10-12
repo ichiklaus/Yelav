@@ -1,0 +1,115 @@
+{
+  "personal_projects": [
+    {
+      "index": 1,
+      "title": "Space tourism multi-page website",
+      "role": "Frontend Developer",
+      "content": "This is a multi-page website built with react-router and animated with Framer Motion.",
+      "stack": [
+        "React",
+        "React-Router",
+        "Framer Motion",
+        "Netlify"
+      ],
+      "links": {
+        "repo": "https://github.com/ichiklaus/space-tourism-website-main/",
+        "site": "https://ichiklaus-space-tourism.netlify.app/"
+      },
+      "img": [
+        "/space-turism-desktop.jpeg",
+        "/space-turism-mobile.jpeg"
+      ]
+    },
+    {
+      "index": 2,
+      "title": "IP Address Tracker",
+      "role": "Frontend Developer",
+      "content": "A simple web app to track and locate a user’s IP address using the IPIFY API and Leaflet.js library.",
+      "stack": [
+        "React",
+        "Parcel",
+        "Tailwindcss",
+        "IPIFY API",
+        "Leaflet.js"
+      ],
+      "links": {
+        "repo": "https://github.com/ichiklaus/ip-address-tracker/",
+        "site": "https://ichiklaus-ip-tracker.netlify.app/"
+      },
+      "img": [
+        "/ip-address-tracker-desktop.jpeg",
+        "/ip-address-tracker-mobile.jpeg"
+      ]
+    },
+    {
+      "index": 3,
+      "title": "GitHub-User Search App",
+      "role": "Frontend Developer",
+      "content": "A web app for visualizing GitHub users profile stats. Toggle between dark & light modes, whatever you prefer!",
+      "stack": [
+        "React",
+        "Parcel",
+        "Tailwindcss",
+        "GitHub API",
+        "Netlify"
+      ],
+      "links": {
+        "repo": "https://github.com/ichiklaus/github-user-search-app/",
+        "site": "https://ichiklaus-github-user-search.netlify.app/"
+      },
+      "img": [
+        "/github-user-search-app-light.jpeg",
+        "/github-user-search-app-dark.jpeg"
+      ]
+    },
+    {
+      "index": 4,
+      "title": "Clipboard Landing Page",
+      "role": "Frontend Developer",
+      "content": "A simple landing page for a fictional digital product built with semantic HTML and custom CSS.",
+      "stack": [
+        "HTML5",
+        "CSS",
+        "GitHub Pages"
+      ],
+      "links": {
+        "repo": "https://github.com/ichiklaus/fem-clipboard/",
+        "site": "https://ichiklaus.github.io/fem-clipboard/"
+      },
+      "img": [
+        "/clipboard-landing.png"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "key": "acs",
+      "company": "AlphaCrew Studio",
+      "link": "https://alphacrewstudio.com/",
+      "role": "Frontend web developer",
+      "period": {
+        "start": "2022-07-28",
+        "end": ""
+      },
+      "tasks": [
+        "Collaborated in the development of a full-stack application, a Video Marketing Platform, where I built several modules for the dashboard. I was responsible for developing an API using Node.js, Express, and EJS to dynamically render page templates, as well as handling the frontend and using Firebase as the backend.",
+        "Developed a comprehensive dashboard for the Applicant Management module on top of the organization's platform, improving hiring process and management capabilities.",
+        "Integrated various modules, including Time Clocking, Schedule Builder, and Payroll System, into the organization's platform, significantly enhancing operational efficiency.",
+        "Developed websites using CMS solutions such as WordPress and other technologies, as well as building custom-coded websites tailored to specific client needs",
+        "Implemented responsive designs to ensure cross-browser compatibility and improved user experience across web applications and websites."
+      ],
+      "tags": [
+        "Wordpress",
+        "jQuery",
+        "Javascript",
+        "HTML & CSS",
+        "Parcel.js",
+        "Webpack",
+        "Firebase",
+        "Node.js",
+        "Express.js",
+        "EJS"
+      ]
+    }
+  ]
+}
