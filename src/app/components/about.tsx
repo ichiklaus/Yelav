@@ -4,7 +4,7 @@ export default function About() {
       <div className='flex flex-col gap-y-4'>
         <h2 className='text-4xl font-bold text-accent mb-3'>About me</h2>
         <p className='text-lg mb-2'>
-          I'm a Frontend Web Developer with a degree in Information Systems Engineering who enjoys
+          I&apos;m a Web Developer with a degree in Computer Systems Engineering who enjoys
           creating amazing web products and delivering great user experiences
         </p>
         <p className='mb-2'>
@@ -12,15 +12,16 @@ export default function About() {
           experiences:
         </p>
         <ul className='columns-2 list-disc pl-6 marker:text-accent mb-2'>
-          <li>HTML & CSS</li>
-          <li>Javascript</li>
-          <li>JQuery</li>
-          <li>React</li>
+          <li>HTML5 & CSS3</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>React.js</li>
           {/* <li>Bootstrap</li> */}
           {/* <li>Tailwind CSS</li> */}
           <li>Firebase</li>
           <li>Wordpress</li>
           <li>Node.js</li>
+          <li>Express.js</li>
         </ul>
       </div>
     </section>

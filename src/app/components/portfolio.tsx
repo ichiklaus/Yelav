@@ -40,10 +40,13 @@ export default function Portfolio({ projects }: PortfolioProps) {
             Personal Projects
           </h2>
         </header>
-        <section className='flex flex-col gap-y-16 the-section'>
-          {projects.map((project) => (
+        <section
+          key={'portfolio-section-01'}
+          className='flex flex-col gap-y-16 the-section'
+        >
+          {projects.map((project, index) => (
             <article
-              key={project.index}
+              key={`${project.index}-${index}`}
               className='relative bg-light-lilac/5 group port-article px-6 py-4 flex flex-col lg:flex-row gap-2 border border-transparent hover:border-white/10 rounded-lg transition-colors delay-100 ease-linear hover:bg-light-lilac/5 motion-reduce:transition-none '
               onMouseMove={handleMouseMove}
             >
@@ -60,9 +63,7 @@ export default function Portfolio({ projects }: PortfolioProps) {
                 }}
               />
 
-              <div
-                className='content the-main-content w-full'
-              >
+              <div className='content the-main-content w-full'>
                 {/* <figure className='progress'>
                   <motion.div className='image-item' style={{ pathLength: scrollYProgress }}>
                     <Image
@@ -92,43 +93,54 @@ export default function Portfolio({ projects }: PortfolioProps) {
                       <ul className='flex gap-5 flex-col md:flex-row mb-6 lg:mb-2'>
                         {project.stack.map((item, index) => (
                           <motion.li
-                          className='rounded-2xl border border-white/10 border-solid px-4 py-2 w-fit'
+                            key={`project-${project.index}-${index}`}
+                            className='rounded-2xl border border-white/10 border-solid px-4 py-2 w-fit'
                             whileHover={{
                               color: '#B488FF',
                             }}
-                            key={index}
                           >
                             {item}
                           </motion.li>
                         ))}
                       </ul>
                       <ul className='inline-flex flex-row justify-end gap-4 ml-2'>
-                        <li key='repo-link'>
-                          <motion.a
-                            className='text-2xl mb-2 font-bold group relative z-10'
-                            whileHover={{
-                              color: '#B488FF',
-                            }}
-                            href={project.links.repo}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                          >
-                            <FontAwesomeIcon icon={faGithub} />
-                          </motion.a>
-                        </li>
-                        <li key='live-site-link'>
-                          <motion.a
-                            className='text-2xl mb-2 font-bold group relative z-10'
-                            whileHover={{
-                              color: '#B488FF',
-                            }}
-                            href={project.links.site}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                          >
-                            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
-                          </motion.a>
-                        </li>
+                        {project.links.repo && project.links.repo !== '' ? (
+                          <li key={`${project.index}-repo-link`}>
+                            <motion.a
+                              className='text-2xl mb-2 font-bold group relative z-10'
+                              whileHover={{
+                                color: '#B488FF',
+                              }}
+                              href={project.links.repo}
+                              target='_blank'
+                              rel='noopener noreferrer'
+                            >
+                              <FontAwesomeIcon icon={faGithub} />
+                            </motion.a>
+                          </li>
+                        ) : (
+                          ''
+                        )}
+
+                        {project.links.site && project.links.site !== '' ? (
+                          <li key={`${project.index}-live-site-link`}>
+                            <motion.a
+                              className='text-2xl mb-2 font-bold group relative z-10'
+                              whileHover={{
+                                color: '#B488FF',
+                              }}
+                              href={project.links.site}
+                              target='_blank'
+                              rel='noopener noreferrer'
+                            >
+                              <FontAwesomeIcon
+                                icon={faArrowUpRightFromSquare}
+                              />
+                            </motion.a>
+                          </li>
+                        ) : (
+                          ''
+                        )}
                       </ul>
                     </section>
                   </div>

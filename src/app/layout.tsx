@@ -5,8 +5,8 @@ import Header from '@components/app/header'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Nicolás',
-  description: 'Nicolás is a Frontend Web Developer with a degree in Information Systems Engineering who enjoys creating amazing web products and delivering great user experiences',
+  title: 'Yeraldo Nicolás Moreira | Web Developer',
+  description: 'Yeraldo Nicolás Moreira is a Web Developer with a degree in Computer Systems Engineering who enjoys creating amazing web products and delivering great user experiences',
 }
 
 export default function RootLayout({

@@ -2,6 +2,46 @@
   "personal_projects": [
     {
       "index": 1,
+      "title": "Personal Website",
+      "role": "Developer",
+      "content": "Welcome to my personal portfolio website repository. This site showcases selected projects, technologies I’ve worked with, and my experience as a Web Developer.",
+      "stack": [
+        "Typescript",
+        "React.js",
+        "Tailwindcss",
+        "Next.js"
+      ],
+      "links": {
+        "repo": "https://github.com/ichiklaus/spa-prototype-w-jquery",
+        "site": ""
+      },
+      "img": [
+        "/space-turism-desktop.jpeg",
+        "/space-turism-mobile.jpeg"
+      ]
+    },
+    {
+      "index": 2,
+      "title": "SPA Prototype With jQuery",
+      "role": "Developer",
+      "content": "Single Page Application (SPA) prototype built with jQuery, focused on demonstrating a simple authentication flow and dashboard layout without relying on modern frontend frameworks. It serves as an example of how to structure a modular, maintainable jQuery-based SPA with basic routing and views.",
+      "stack": [
+        "jQuery",
+        "Webpack",
+        "Bootstrap",
+        "Firebase"
+      ],
+      "links": {
+        "repo": "https://github.com/ichiklaus/spa-prototype-w-jquery",
+        "site": ""
+      },
+      "img": [
+        "/space-turism-desktop.jpeg",
+        "/space-turism-mobile.jpeg"
+      ]
+    },
+    {
+      "index": 3,
       "title": "Space tourism multi-page website",
       "role": "Frontend Developer",
       "content": "This is a multi-page website built with react-router and animated with Framer Motion.",
@@ -18,48 +58,6 @@
       "img": [
         "/space-turism-desktop.jpeg",
         "/space-turism-mobile.jpeg"
-      ]
-    },
-    {
-      "index": 2,
-      "title": "IP Address Tracker",
-      "role": "Frontend Developer",
-      "content": "A simple web app to track and locate a user’s IP address using the IPIFY API and Leaflet.js library.",
-      "stack": [
-        "React",
-        "Parcel",
-        "Tailwindcss",
-        "IPIFY API",
-        "Leaflet.js"
-      ],
-      "links": {
-        "repo": "https://github.com/ichiklaus/ip-address-tracker/",
-        "site": "https://ichiklaus-ip-tracker.netlify.app/"
-      },
-      "img": [
-        "/ip-address-tracker-desktop.jpeg",
-        "/ip-address-tracker-mobile.jpeg"
-      ]
-    },
-    {
-      "index": 3,
-      "title": "GitHub-User Search App",
-      "role": "Frontend Developer",
-      "content": "A web app for visualizing GitHub users profile stats. Toggle between dark & light modes, whatever you prefer!",
-      "stack": [
-        "React",
-        "Parcel",
-        "Tailwindcss",
-        "GitHub API",
-        "Netlify"
-      ],
-      "links": {
-        "repo": "https://github.com/ichiklaus/github-user-search-app/",
-        "site": "https://ichiklaus-github-user-search.netlify.app/"
-      },
-      "img": [
-        "/github-user-search-app-light.jpeg",
-        "/github-user-search-app-dark.jpeg"
       ]
     },
     {
@@ -86,17 +84,24 @@
       "key": "acs",
       "company": "AlphaCrew Studio",
       "link": "https://alphacrewstudio.com/",
-      "role": "Frontend web developer",
+      "role": "Web developer",
       "period": {
         "start": "2022-07-28",
         "end": ""
       },
-      "tasks": [
+      "tasks2": [
         "Collaborated in the development of a full-stack application, a Video Marketing Platform, where I built several modules for the dashboard. I was responsible for developing an API using Node.js, Express, and EJS to dynamically render page templates, as well as handling the frontend and using Firebase as the backend.",
         "Developed a comprehensive dashboard for the Applicant Management module on top of the organization's platform, improving hiring process and management capabilities.",
         "Integrated various modules, including Time Clocking, Schedule Builder, and Payroll System, into the organization's platform, significantly enhancing operational efficiency.",
         "Developed websites using CMS solutions such as WordPress and other technologies, as well as building custom-coded websites tailored to specific client needs",
         "Implemented responsive designs to ensure cross-browser compatibility and improved user experience across web applications and websites."
+      ],
+      "tasks": [
+        "Developed full-stack features for a Video Marketing platform, building responsive interfaces and scalable backend services.",
+        "Led development of business management modules like applicant tracking, payroll, and scheduling systems.",
+        "Automated operational tasks using Google Cloud Scheduler and email workflows.",
+        "Optimized frontend performance and cross-browser compatibility.",
+        "Customized WordPress frontend solutions, adapting designs and interactions using themes, page builders, and plugins to meet client needs."
       ],
       "tags": [
         "Wordpress",
@@ -104,6 +109,8 @@
         "Javascript",
         "HTML & CSS",
         "Parcel.js",
+        "Vite",
+        "Next.js",
         "Webpack",
         "Firebase",
         "Node.js",

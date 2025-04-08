@@ -7,11 +7,11 @@ export default function Hero() {
       <header className='text-white'>
         <div className='ml-2 mb-2'>
           <small className='text-xl'>
-            Hello, I'm <span className='text-accent'>Nicolás</span>
+            Hello, I&apos;m <span className='text-accent'>Nicolás</span>
           </small>
         </div>
         <h1 className='text-5xl md:text-7xl lg:text-8xl font-bold'>
-          A <span className='text-accent'>Frontend Web</span>{' '}
+          A <span className='text-accent'>Web</span>{' '}
           <span className='text-accent'>Developer</span> 
           {/* at 
           <motion.a

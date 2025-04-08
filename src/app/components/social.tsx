@@ -28,7 +28,7 @@ export default function Social() {
       >
         <FontAwesomeIcon icon={faGithub} />
       </motion.a>
-      <motion.a
+      {/* <motion.a
         whileHover={{
           color: '#B488FF',
         }}
@@ -37,7 +37,7 @@ export default function Social() {
         className='text-2xl'
       >
         <FontAwesomeIcon icon={faBriefcase} />
-      </motion.a>
+      </motion.a> */}
       <motion.a
         whileHover={{
           color: '#B488FF',
