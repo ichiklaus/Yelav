@@ -12,8 +12,8 @@
         "Next.js"
       ],
       "links": {
-        "repo": "https://github.com/ichiklaus/spa-prototype-w-jquery",
-        "site": ""
+        "repo": "https://github.com/ichiklaus/Yelav",
+        "site": "https://yelav.netlify.app/"
       },
       "img": [
         "/space-turism-desktop.jpeg",
