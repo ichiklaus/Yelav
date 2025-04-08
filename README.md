@@ -1,6 +1,6 @@
 # Yeraldo Moreira - Portfolio Website
 
-Welcome to my personal portfolio website repository. This site showcases selected projects, technologies I’ve worked with, and my experience as a Web Developer focused.
+Welcome to my personal portfolio website repository. This site showcases selected projects, technologies I’ve worked with, and my experience as a Web Developer.
 
 ## 🚀 About Me
 
