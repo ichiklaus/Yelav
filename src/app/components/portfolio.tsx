@@ -78,7 +78,7 @@ export default function Portfolio({ projects }: PortfolioProps) {
                 <section className='content-description'>
                   <div className='mb-4'>
                     <p className='text-accent text-2xl'>
-                      {project.index < 10 ? `0${project.index}` : project.index}
+                      {project.index < 10 ? `0${index + 1}` : index + 1}
                     </p>
                   </div>
                   <div>

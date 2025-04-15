@@ -89,7 +89,7 @@ function Experience({ experience }: ExperienceProps) {
                     />
                   </motion.a>
                 </h3>
-                <ul className='flex flex-col gap-6 list-disc pl-6 marker:text-accent mb-4'>
+                <ul className='flex flex-col gap-4 list-disc pl-6 marker:text-accent mb-4'>
                   {item.tasks.map((task, index) => (
                     <li key={index}>{task}</li>
                   ))}

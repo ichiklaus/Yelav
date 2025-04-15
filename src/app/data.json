@@ -1,15 +1,16 @@
 {
   "personal_projects": [
     {
-      "index": 1,
+      "index": 2,
       "title": "Personal Website",
       "role": "Developer",
-      "content": "Welcome to my personal portfolio website repository. This site showcases selected projects, technologies I’ve worked with, and my experience as a Web Developer.",
+      "content": "My personal portfolio website repository. This site showcases selected projects, technologies I’ve worked with, and my experience as a Web Developer.",
       "stack": [
         "Typescript",
         "React.js",
+        "Next.js",
         "Tailwindcss",
-        "Next.js"
+        "Framer Motion"
       ],
       "links": {
         "repo": "https://github.com/ichiklaus/Yelav",
@@ -21,7 +22,7 @@
       ]
     },
     {
-      "index": 2,
+      "index": 1,
       "title": "SPA Prototype With jQuery",
       "role": "Developer",
       "content": "Single Page Application (SPA) prototype built with jQuery, focused on demonstrating a simple authentication flow and dashboard layout without relying on modern frontend frameworks. It serves as an example of how to structure a modular, maintainable jQuery-based SPA with basic routing and views.",
@@ -67,7 +68,7 @@
       "content": "A simple landing page for a fictional digital product built with semantic HTML and custom CSS.",
       "stack": [
         "HTML5",
-        "CSS",
+        "CSS3",
         "GitHub Pages"
       ],
       "links": {
@@ -110,6 +111,7 @@
         "HTML & CSS",
         "Parcel.js",
         "Vite",
+        "React",
         "Next.js",
         "Webpack",
         "Firebase",

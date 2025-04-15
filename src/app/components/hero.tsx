@@ -1,9 +1,9 @@
-import Social from './social';
-import { motion, useScroll, AnimatePresence } from 'framer-motion';
+import Social from './Social';
+// import { motion, useScroll, AnimatePresence } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section id='home' className='hero h-lvh w-full xl:w-2/3 mx-auto flex flex-col justify-center'>
+    <section id='home' style={{marginTop: "-14rem", marginBottom: "14rem"}} className='hero h-lvh w-full xl:w-2/3 mx-auto flex flex-col justify-center'>
       <header className='text-white'>
         <div className='ml-2 mb-2'>
           <small className='text-xl'>

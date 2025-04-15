@@ -1,47 +1,3 @@
-@media screen and (min-width: 1280px) {
-  /* .navlist {
-    width: 49.62643678160919vw;
-    padding: 2.5rem 0;
-    align-items: center;
-  } */
-
-  /* .navlist-decoration {
-    display: flex;
-    align-items: center;
-  } */
-
-  .navlist-decoration::before {
-    content: "";
-    /* border-bottom: 1px solid hsl(0, 0%, 59%); */
-    @apply border-b-light-lilac border-b-2 border-solid;
-    opacity: 0.3;
-    width: 29.563rem;
-    height: 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1000;
-    left: 0rem;   
-}
-
-  #home::before {
-    content: "00";
-  }
-
-  #destination::before {
-    content: "01";
-  }
-
-  #crew::before {
-    content: "02";
-  }
-
-  #technology::before {
-    content: "03";
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .navlist {
     padding: 2rem 4rem 2rem 0;
@@ -50,33 +6,12 @@
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
-  #home::before {
-    content: "00";
-    font-weight: 600;
-  }
-
-  #destination::before {
-    content: "01";
-    font-weight: 600;
-  }
-
-  #crew::before {
-    content: "02";
-    font-weight: 600;
-  }
-
-  #technology::before {
-    content: "03";
-    font-weight: 600;
-  }
-
   .ul-menu {
     position: fixed;
     inset: -20px 0 -20px 40%;
     padding-top: 7rem;
     z-index: 1000;
   }
-
 
   .hidden {
     display: none !important;
@@ -101,7 +36,7 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem; */
     right: -82%;
-    z-index: 1000; 
+    z-index: 1000;
     @apply relative lg:static w-fit py-2 lg:py-0;
   }
 

@@ -9,10 +9,11 @@ config.autoAddCss = false;
 import data from './data.json';
 
 // import Header from '@components/app/header';
-import Hero from '@components/app/components/hero';
-import About from '@components/app/components/about';
-import Experience from '@components/app/components/experience';
-import Portfolio from '@components/app/components/portfolio';
+import Hero from '@components/app/components/Hero';
+import About from '@components/app/components/About';
+import Experience from '@components/app/components/Experience';
+import Portfolio from '@components/app/components/Portfolio';
+import SectionNavigator from './components/Navigator';
 // import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -42,12 +43,24 @@ export default function Home() {
         />
         <Header />
       </header> */}
-      <main className='main'>
+      <main id='main' className='main'>
+        <SectionNavigator
+          sectionIds={['home', 'content']}
+          showNavButtons={false}
+          transitionType='scale'
+        />
         <Hero />
-        <section className='flex flex-col gap-20 w-full xl:w-2/3 mx-auto'>
+        <section
+          id='content'
+          className='flex flex-col gap-20 w-full xl:w-2/3 mx-auto'
+        >
           <About />
           <Experience experience={data.experience} />
-          <Portfolio projects={data.personal_projects} />
+          <Portfolio
+            projects={data.personal_projects.sort(function (a, b) {
+              return a.index - b.index;
+            })}
+          />
         </section>
       </main>
     </div>
