@@ -27,7 +27,7 @@ module.exports = {
         'glass': '#9696961a',
       },
       fontSize: {
-        'base': '1.125rem'
+        'base': '16px'
       },
       height: {
         'lvh': '100vh'

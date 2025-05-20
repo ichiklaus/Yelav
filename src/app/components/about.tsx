@@ -3,7 +3,7 @@ export default function About() {
     <section id='about' className='pt-32'>
       <div className='flex flex-col gap-y-4'>
         <h2 className='font-bold text-accent mb-3'>About me</h2>
-        <p className='text-lg mb-2'>
+        <p className='mb-2'>
           I&apos;m a Web Developer with a degree in Computer Systems Engineering
           who enjoys creating amazing web products and delivering great user
           experiences
