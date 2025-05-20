@@ -59,7 +59,7 @@ const Fade = ({
   children,
   effect = 'in',
   direction = 'BTT',
-  duration = 0.6,
+  duration = 0.3,
   delay = 0,
   threshold = 0.2,
 }: FadeProps) => {
@@ -84,6 +84,7 @@ const Fade = ({
       <motion.div
         ref={ref}
         initial='hidden'
+        className='w-full h-full'
         animate={controls}
         variants={variants}
       >

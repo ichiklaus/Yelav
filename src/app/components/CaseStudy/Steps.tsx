@@ -7,6 +7,7 @@ import { CaseStudyDynamicContentSteps } from '@libs/interfaces';
 import React from 'react';
 import { useState } from 'react';
 import BeforeAfterSlider from '@components/UI/BeforeAfterSlider';
+import Fade from '@components/Animations/Fade';
 
 interface Props {
   steps: CaseStudyDynamicContentSteps[] | undefined;
@@ -28,27 +29,29 @@ export default function Steps({ steps }: Props) {
 
   return (
     <>
-      {!steps || steps.length < 1 ? null : (
-        <>
+      {steps && steps.length > 1 && (
+        <section aria-label='Dynamic Case Study Content Steps'>
           {
             <ul className='list-none ms-0'>
               {steps.map((step, index) => (
                 <li key={`step-${index}`} className='mb-28'>
-                  <div className='flex lg:flex-row flex-col-reverse gap-y-10 gap-x-16 items-center'>
-                    <div className='flex-1 w-full gap-6 flex justify-center relative'>
+                  <section className='flex lg:flex-row flex-col-reverse gap-y-10 gap-x-16 items-center'>
+                    <article className='flex-1 w-full gap-6 flex justify-center relative'>
                       {step.image_urls && step.image_urls.length > 0 ? (
                         step.image_urls.length === 2 ? (
-                          <BeforeAfterSlider
-                            maxWidth='400px'
-                            beforeImage={{
-                              src: step.image_urls[0].url,
-                              alt: step.image_urls[0].alt,
-                            }}
-                            afterImage={{
-                              src: step.image_urls[1].url,
-                              alt: step.image_urls[1].alt,
-                            }}
-                          />
+                          <Fade direction='BTT'>
+                            <BeforeAfterSlider
+                              maxWidth='400px'
+                              beforeImage={{
+                                src: step.image_urls[0].url,
+                                alt: step.image_urls[0].alt,
+                              }}
+                              afterImage={{
+                                src: step.image_urls[1].url,
+                                alt: step.image_urls[1].alt,
+                              }}
+                            />
+                          </Fade>
                         ) : step.image_urls && step.image_urls.length === 1 ? (
                           <CustomImage
                             width='70%'
@@ -82,25 +85,27 @@ export default function Steps({ steps }: Props) {
                           ))
                         )
                       ) : null}
-                    </div>
-                    <div className='flex-1 w-full'>
-                      <h3 className='flex gap-4 mb-4 lg:mb-10 text-2xl lg:text-3xl'>
-                        <span className='block'>
-                          {addLeadingZero(index + 1)}.
-                        </span>
-                        <span className='block'>{step.title}</span>
-                      </h3>
-                      <p>
-                        {typeof step.description === 'string' &&
-                          step.description}
-                      </p>
-                    </div>
-                  </div>
+                    </article>
+                    <article className='flex-1 w-full'>
+                      <Fade direction='BTT'>
+                        <h3 className='flex gap-4 mb-4 lg:mb-10 text-2xl lg:text-3xl'>
+                          <span className='block'>
+                            {addLeadingZero(index + 1)}.
+                          </span>
+                          <span className='block'>{step.title}</span>
+                        </h3>
+                        <p>
+                          {typeof step.description === 'string' &&
+                            step.description}
+                        </p>
+                      </Fade>
+                    </article>
+                  </section>
                 </li>
               ))}
             </ul>
           }
-        </>
+        </section>
       )}
 
       <Lightbox imageUrl={currentImg} isOpen={boxOpen} onClose={boxOnClose} />

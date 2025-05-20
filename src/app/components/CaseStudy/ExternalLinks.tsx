@@ -8,7 +8,7 @@ export default function ExternalLinks({ links }: Props) {
   return (
     <>
       {!links || links.length < 1 ? null : (
-        <div className='mb-20'>
+        <section className='mb-20'>
           <p>Previews:</p>
           <ul className='styled-list'>
             {links.map((link, index) => (
@@ -17,7 +17,7 @@ export default function ExternalLinks({ links }: Props) {
               </li>
             ))}
           </ul>
-        </div>
+        </section>
       )}
     </>
   );

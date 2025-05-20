@@ -26,59 +26,56 @@ export default function DynamicContent({ data }: Props) {
   };
 
   return (
-    <section className='w-full xl:w-2/3 mx-auto flex flex-col justify-center'>
-      <div className='text-left lg:px-10'>
-        {data.map((item, index) => (
-          <div key={`dynamic-content-${index}`}>
-            <Fade direction='BTT'>
-              <article className='mb-20' id={item.name}>
-                <h2 className='mb-3 font-bold text-accent'>
-                  {item.title}
-                </h2>
-                <section>
-                  {typeof item.description === 'string'
-                    ? splitLine(item.description)
-                    : item.description.map((descriptionItem) => {
-                        if (typeof descriptionItem == 'object') {
-                          let a = descriptionItem as DescriptionExtended;
-                          return Object.values(a).map((value) => {
-                            let s = value as DescriptionExtendedItem;
-                            return (
-                              <>
-                                {renderContentType({
-                                  type: s.type,
-                                  content: s.content,
-                                })}
-                              </>
-                            );
-                          });
-                        }
-                      })}
-                </section>
-                <section>
-                  {item.image_urls?.map((img, index) => (
-                    <CustomImage
-                      key={`image_url-${index}`}
-                      alt={img.alt}
-                      url={img.url}
-                      viewImgFullScreen={() => {
-                        viewImgFullScreen(img.url);
-                      }}
-                    />
-                  ))}
-                </section>
-              </article>
-            </Fade>
-
-            <section className='steps-section'>
-              <ExternalLinks links={item.links} />
-
-              <Steps steps={item.steps} />
+    <section className='w-full xl:w-2/3 mx-auto flex flex-col justify-center text-left lg:px-10'>
+      {data.map((item, index) => (
+        <article
+          className='mb-20'
+          id={item.name}
+          key={`dynamic-content-${index}`}
+        >
+          <Fade direction='BTT'>
+            <h2 className='mb-3 font-bold text-accent'>{item.title}</h2>
+            <section aria-label={`${item.title} Description`} className='mb-6'>
+              {typeof item.description === 'string'
+                ? splitLine(item.description)
+                : item.description.map((descriptionItem, i) => {
+                    if (typeof descriptionItem === 'object') {
+                      const a = descriptionItem as DescriptionExtended;
+                      return Object.values(a).map((value, j) => {
+                        const s = value as DescriptionExtendedItem;
+                        return renderContentType({
+                          type: s.type,
+                          content: s.content,
+                        });
+                      });
+                    }
+                    return null;
+                  })}
             </section>
-          </div>
-        ))}
-        <Lightbox imageUrl={currentImg} isOpen={boxOpen} onClose={boxOnClose} />
-      </div>
+
+            {item.image_urls && item.image_urls?.length > 0 && (
+              <section aria-label={`${item.title} Images`} className='mb-6'>
+                {item.image_urls.map((img, index) => (
+                  <CustomImage
+                    key={`image_url-${index}`}
+                    alt={img.alt}
+                    url={img.url}
+                    viewImgFullScreen={() => {
+                      viewImgFullScreen(img.url);
+                    }}
+                  />
+                ))}
+              </section>
+            )}
+
+            <ExternalLinks links={item.links} />
+          </Fade>
+
+          <Steps steps={item.steps} />
+        </article>
+      ))}
+
+      <Lightbox imageUrl={currentImg} isOpen={boxOpen} onClose={boxOnClose} />
     </section>
   );
 }

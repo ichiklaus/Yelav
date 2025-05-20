@@ -67,14 +67,28 @@ export default function BeforeAfterSlider({
           className='absolute top-0 left-0 right-0 bottom-0'
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.095)', zIndex: 1 }}
         />
-        <Image alt={beforeImage.alt} fill priority src={beforeImage.src} />
+        <Image
+          alt={beforeImage.alt}
+          width={0}
+          height={0}
+          sizes='100vw'
+          style={{ width: '100%', height: '100%' }}
+          src={beforeImage.src}
+        />
         <div
           className='absolute top-0 left-0 right-0 bottom-0 overflow-hidden select-none'
           style={{
             clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`,
           }}
         >
-          <Image alt={afterImage.alt} fill priority src={afterImage.src} />
+          <Image
+            alt={afterImage.alt}
+            width={0}
+            height={0}
+            sizes='100vw'
+            style={{ width: '100%', height: '100%' }}
+            src={afterImage.src}
+          />
         </div>
 
         <div
