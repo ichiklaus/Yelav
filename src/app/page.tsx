@@ -6,10 +6,10 @@ config.autoAddCss = false;
 
 import data from './data.json';
 
-import Hero from '@components/Hero';
-import About from '@components/About';
-import Experience from '@components/Experience';
-import Portfolio from '@components/Portfolio';
+import Hero from '@components/hero';
+import About from '@components/about';
+import Experience from '@components/experience';
+import Portfolio from '@components/portfolio';
 // import SectionNavigator from '@components/SectionNavigator';
 
 export default function Home() {
