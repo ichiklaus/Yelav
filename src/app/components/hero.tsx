@@ -1,4 +1,4 @@
-import Social from './Social';
+import Social from './social';
 // import { motion, useScroll, AnimatePresence } from 'framer-motion';
 
 export default function Hero() {
