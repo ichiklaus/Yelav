@@ -1,9 +1,9 @@
 'use client';
 
-import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
+import { motion, useScroll, useSpring } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
-import NavList from '@components/app/components/NavList';
+import NavList from './NavList';
 
 export default function Header() {
   const { scrollYProgress } = useScroll();

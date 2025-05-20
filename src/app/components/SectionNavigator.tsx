@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 interface SectionNavigatorProps {
   sectionIds: string[]; // Array of section IDs
@@ -7,7 +7,7 @@ interface SectionNavigatorProps {
   showNavButtons?: boolean;
 }
 
-const Navigator: React.FC<SectionNavigatorProps> = ({
+const SectionNavigator: React.FC<SectionNavigatorProps> = ({
   sectionIds,
   transitionDuration = 200,
   transitionType = 'fade',
@@ -19,101 +19,107 @@ const Navigator: React.FC<SectionNavigatorProps> = ({
   const transitionTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const hasSnappedRef = useRef<boolean>(false);
 
-  // Navigate to a specific section
-  const navigateToSection = (index: number) => {
-    console.log('navigating');
-    if (index >= 0 && index < sectionIds.length) {
-      // Always allow navigation via buttons, even during transitions
-      setIsTransitioning(true);
-
-      const targetSection = document.getElementById(sectionIds[index]);
-      if (targetSection) {
-        // Apply transition effect before scrolling
-        applyTransitionEffect(index);
-
-        // Scroll to the target section
-        window.scrollTo({
-          top: targetSection.offsetTop,
-          behavior: 'smooth',
-        });
-
-        setActiveSection(index);
-
-        // If navigating back to home, reset the snap flag
-        if (index === 0) {
-          hasSnappedRef.current = false;
-        }
-
-        // Clear transition state after animation completes
-        // if (transitionTimeoutRef.current) {
-        //   clearTimeout(transitionTimeoutRef.current);
-        // }
-
-        // transitionTimeoutRef.current = setTimeout(() => {
-        //   setIsTransitioning(false);
-        // }, transitionDuration);
-      }
-    }
-  };
-
   // Apply transition effect based on selected type
-  const applyTransitionEffect = (targetIndex: number) => {
-    // Apply different transition effects based on type
-    sectionIds.forEach((id, index) => {
-      const section = document.getElementById(id);
-      if (!section) return;
+  const applyTransitionEffect = useCallback(
+    (targetIndex: number) => {
+      // Apply different transition effects based on type
+      sectionIds.forEach((id, index) => {
+        const section = document.getElementById(id);
+        if (!section) return;
 
-      // Set base transition property
-      section.style.transition = `opacity ${transitionDuration}ms ease-in-out, 
+        // Set base transition property
+        section.style.transition = `opacity ${transitionDuration}ms ease-in-out, 
                                  transform ${transitionDuration}ms ease-in-out, 
                                  filter ${transitionDuration}ms ease-in-out`;
 
-      // Is this the target section?
-      const isTarget = index === targetIndex;
+        // Is this the target section?
+        const isTarget = index === targetIndex;
 
-      // Apply effect based on type
-      switch (transitionType) {
-        case 'fade':
-          section.style.opacity = isTarget ? '1' : '0.5';
-          break;
+        // Apply effect based on type
+        switch (transitionType) {
+          case 'fade':
+            section.style.opacity = isTarget ? '1' : '0.5';
+            break;
 
-        case 'slide':
-          if (isTarget) {
-            section.style.transform = 'translateY(0)';
-          } else if (index < targetIndex) {
-            section.style.transform = 'translateY(-30px)';
-          } else {
-            section.style.transform = 'translateY(30px)';
+          case 'slide':
+            if (isTarget) {
+              section.style.transform = 'translateY(0)';
+            } else if (index < targetIndex) {
+              section.style.transform = 'translateY(-30px)';
+            } else {
+              section.style.transform = 'translateY(30px)';
+            }
+            break;
+
+          case 'scale':
+            section.style.transform = isTarget ? 'scale(1)' : 'scale(0.95)';
+            section.style.opacity = isTarget ? '1' : '0.8';
+            break;
+
+          case '3d':
+            document.body.style.perspective = '1000px';
+            if (isTarget) {
+              section.style.transform = 'rotateX(0) translateZ(0)';
+            } else if (index < targetIndex) {
+              section.style.transform = 'rotateX(-10deg) translateZ(-100px)';
+            } else {
+              section.style.transform = 'rotateX(10deg) translateZ(-100px)';
+            }
+            section.style.opacity = isTarget ? '1' : '0.7';
+            break;
+
+          case 'blur':
+            section.style.filter = isTarget ? 'blur(0)' : 'blur(3px)';
+            section.style.opacity = isTarget ? '1' : '0.8';
+            break;
+        }
+      });
+    },
+    [sectionIds, transitionDuration, transitionType],
+  );
+
+  // Navigate to a specific section
+  const navigateToSection = useCallback(
+    (index: number) => {
+      console.log('navigating');
+      if (index >= 0 && index < sectionIds.length) {
+        // Always allow navigation via buttons, even during transitions
+        setIsTransitioning(true);
+
+        const targetSection = document.getElementById(sectionIds[index]);
+        if (targetSection) {
+          // Apply transition effect before scrolling
+          applyTransitionEffect(index);
+
+          // Scroll to the target section
+          window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth',
+          });
+
+          setActiveSection(index);
+
+          // If navigating back to home, reset the snap flag
+          if (index === 0) {
+            hasSnappedRef.current = false;
           }
-          break;
 
-        case 'scale':
-          section.style.transform = isTarget ? 'scale(1)' : 'scale(0.95)';
-          section.style.opacity = isTarget ? '1' : '0.8';
-          break;
+          // Clear transition state after animation completes
+          // if (transitionTimeoutRef.current) {
+          //   clearTimeout(transitionTimeoutRef.current);
+          // }
 
-        case '3d':
-          document.body.style.perspective = '1000px';
-          if (isTarget) {
-            section.style.transform = 'rotateX(0) translateZ(0)';
-          } else if (index < targetIndex) {
-            section.style.transform = 'rotateX(-10deg) translateZ(-100px)';
-          } else {
-            section.style.transform = 'rotateX(10deg) translateZ(-100px)';
-          }
-          section.style.opacity = isTarget ? '1' : '0.7';
-          break;
-
-        case 'blur':
-          section.style.filter = isTarget ? 'blur(0)' : 'blur(3px)';
-          section.style.opacity = isTarget ? '1' : '0.8';
-          break;
+          // transitionTimeoutRef.current = setTimeout(() => {
+          //   setIsTransitioning(false);
+          // }, transitionDuration);
+        }
       }
-    });
-  };
+    },
+    [applyTransitionEffect, sectionIds],
+  );
 
   // Reset all section styles
-  const resetSectionStyles = () => {
+  const resetSectionStyles = useCallback(() => {
     sectionIds.forEach((id) => {
       const section = document.getElementById(id);
       if (!section) return;
@@ -123,7 +129,7 @@ const Navigator: React.FC<SectionNavigatorProps> = ({
       section.style.transform = 'none';
       section.style.filter = 'none';
     });
-  };
+  }, [sectionIds]);
 
   // Use a direct callback with useEffect
   useEffect(() => {
@@ -138,6 +144,8 @@ const Navigator: React.FC<SectionNavigatorProps> = ({
 
   // Handle scroll event to detect current section and handle home-to-content snap
   useEffect(() => {
+    const timeout = transitionTimeoutRef.current;
+
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       const scrollDirection =
@@ -217,11 +225,11 @@ const Navigator: React.FC<SectionNavigatorProps> = ({
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      if (transitionTimeoutRef.current) {
-        clearTimeout(transitionTimeoutRef.current);
+      if (timeout) {
+        clearTimeout(timeout);
       }
     };
-  }, [activeSection, isTransitioning, sectionIds, transitionDuration]);
+  }, [activeSection, isTransitioning, sectionIds, transitionDuration, resetSectionStyles, navigateToSection]);
 
   // Render navigation buttons
   return (
@@ -250,4 +258,4 @@ const Navigator: React.FC<SectionNavigatorProps> = ({
   );
 };
 
-export default Navigator;
+export default SectionNavigator;

@@ -71,7 +71,7 @@ export default function NavList() {
         >
           <li>
             <motion.a
-              href='#home'
+              href='/#home'
               className=''
               whileHover={{
                 color: '#B488FF',
@@ -82,7 +82,7 @@ export default function NavList() {
           </li>
           <li>
             <motion.a
-              href='#about'
+              href='/#about'
               className=''
               whileHover={{
                 color: '#B488FF',
@@ -93,7 +93,7 @@ export default function NavList() {
           </li>
           <li>
             <motion.a
-              href='#experience'
+              href='/#experience'
               className=''
               whileHover={{
                 color: '#B488FF',
@@ -104,7 +104,7 @@ export default function NavList() {
           </li>
           <li>
             <motion.a
-              href='#projects'
+              href='/#projects'
               className=''
               whileHover={{
                 color: '#B488FF',

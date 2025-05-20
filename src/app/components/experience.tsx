@@ -36,12 +36,12 @@ function Experience({ experience }: ExperienceProps) {
     <section id='experience' className='pt-32 -mt-32'>
       <AnimatePresence>
         <header>
-          <h2 className='text-4xl font-bold text-accent mb-6'>Experience</h2>
+          <h2 className='font-bold text-accent mb-6'>Experience</h2>
         </header>
         {experience.map((item) => (
           <article
             key={item.key}
-            className='experience-box group rounded-lg transition-colors delay-100 ease-linear border border-transparent hover:border-white/10 hover:bg-light-lilac/5 motion-reduce:transition-none relative px-6 py-4'
+            className='experience-box group rounded-lg transition-colors delay-100 ease-linear border border-transparent hover:border-white/10 hover:bg-light-lilac/5 motion-reduce:transition-none relative lg:px-6 lg:py-4 px-4 py-4'
             onMouseMove={handleMouseMove}
           >
             <motion.div
@@ -89,12 +89,12 @@ function Experience({ experience }: ExperienceProps) {
                     />
                   </motion.a>
                 </h3>
-                <ul className='flex flex-col gap-4 list-disc pl-6 marker:text-accent mb-4'>
+                <ul className='flex flex-col gap-4 styled-list lg:pl-6 ml-6 lg:ml-8 marker:text-accent mb-4'>
                   {item.tasks.map((task, index) => (
                     <li key={index}>{task}</li>
                   ))}
                 </ul>
-                <ul className='inline-flex flex-wrap gap-4 mb-4'>
+                <ul className='inline-flex flex-wrap gap-4 mb-4 ml-3 lg:ml-8'>
                   {item.tags.map((tag, index) => (
                     <motion.li
                       key={index}

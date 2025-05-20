@@ -5,21 +5,13 @@ import {
   useMotionValue,
 } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import {
+  faArrowUpRightFromSquare,
+  faFolderOpen,
+} from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { MouseEvent } from 'react';
-
-interface PortfolioProps {
-  projects: Array<{
-    index: number;
-    title: string;
-    role: string;
-    content: string;
-    stack: string[];
-    links: { repo: string; site: string };
-    img: string[];
-  }>;
-}
+import { PortfolioProps } from '@libs/interfaces';
 
 export default function Portfolio({ projects }: PortfolioProps) {
   let mouseX = useMotionValue(0);
@@ -36,18 +28,18 @@ export default function Portfolio({ projects }: PortfolioProps) {
     <section id='projects' className='pt-32 -mt-32'>
       <AnimatePresence>
         <header>
-          <h2 className='text-4xl font-bold text-accent mb-6'>
+          <h2 className='font-bold text-accent mb-6'>
             Personal Projects
           </h2>
         </header>
         <section
           key={'portfolio-section-01'}
-          className='flex flex-col gap-y-16 the-section'
+          className='flex flex-col gap-y-8'
         >
           {projects.map((project, index) => (
             <article
               key={`${project.index}-${index}`}
-              className='relative bg-light-lilac/5 group port-article px-6 py-4 flex flex-col lg:flex-row gap-2 border border-transparent hover:border-white/10 rounded-lg transition-colors delay-100 ease-linear hover:bg-light-lilac/5 motion-reduce:transition-none '
+              className='relative bg-light-lilac/5 group port-article px-4 py-4 lg:px-6 lg:py-4 flex flex-col lg:flex-row gap-2 border border-transparent hover:border-white/10 rounded-lg transition-colors delay-100 ease-linear hover:bg-light-lilac/5 motion-reduce:transition-none '
               onMouseMove={handleMouseMove}
             >
               <motion.div
@@ -90,7 +82,7 @@ export default function Portfolio({ projects }: PortfolioProps) {
                     <section className='flex flex-col gap-3'>
                       <p>{project.role}</p>
                       <p className='mb-6 lg:mb-2'>{project.content}</p>
-                      <ul className='flex gap-5 flex-col md:flex-row mb-6 lg:mb-2'>
+                      <ul className='flex gap-5 flex-wrap mb-6 ml-3 lg:ml-8 lg:mb-2'>
                         {project.stack.map((item, index) => (
                           <motion.li
                             key={`project-${project.index}-${index}`}
@@ -104,16 +96,39 @@ export default function Portfolio({ projects }: PortfolioProps) {
                         ))}
                       </ul>
                       <ul className='inline-flex flex-row justify-end gap-4 ml-2'>
-                        {project.links.repo && project.links.repo !== '' ? (
+                        {project.links.case_study &&
+                        project.links.case_study.url !== '' ? (
+                          <li key={`${project.index}-case_study-link`}>
+                            <motion.a
+                              className='text-2xl mb-2 font-bold group relative z-10'
+                              whileHover={{
+                                color: '#B488FF',
+                              }}
+                              href={project.links.case_study.url}
+                              target={
+                                project.links.case_study.isExternal
+                                  ? '_blank'
+                                  : ''
+                              }
+                            >
+                              <FontAwesomeIcon icon={faFolderOpen} />
+                            </motion.a>
+                          </li>
+                        ) : (
+                          ''
+                        )}
+
+                        {project.links.repo && project.links.repo.url !== '' ? (
                           <li key={`${project.index}-repo-link`}>
                             <motion.a
                               className='text-2xl mb-2 font-bold group relative z-10'
                               whileHover={{
                                 color: '#B488FF',
                               }}
-                              href={project.links.repo}
-                              target='_blank'
-                              rel='noopener noreferrer'
+                              href={project.links.repo.url}
+                              target={
+                                project.links.repo.isExternal ? '_blank' : ''
+                              }
                             >
                               <FontAwesomeIcon icon={faGithub} />
                             </motion.a>
@@ -122,16 +137,17 @@ export default function Portfolio({ projects }: PortfolioProps) {
                           ''
                         )}
 
-                        {project.links.site && project.links.site !== '' ? (
+                        {project.links.site && project.links.site.url !== '' ? (
                           <li key={`${project.index}-live-site-link`}>
                             <motion.a
                               className='text-2xl mb-2 font-bold group relative z-10'
                               whileHover={{
                                 color: '#B488FF',
                               }}
-                              href={project.links.site}
-                              target='_blank'
-                              rel='noopener noreferrer'
+                              href={project.links.site.url}
+                              target={
+                                project.links.site.isExternal ? '_blank' : ''
+                              }
                             >
                               <FontAwesomeIcon
                                 icon={faArrowUpRightFromSquare}

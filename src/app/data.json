@@ -1,9 +1,33 @@
 {
   "personal_projects": [
     {
+      "index": 1,
+      "uid": "spa-prototype-jquery",
+      "title": "SPA Prototype With jQuery",
+      "role": "Web Developer",
+      "content": "Single Page Application (SPA) prototype built with jQuery, focused on demonstrating a simple authentication flow and dashboard layout without relying on modern frontend frameworks. It serves as an example of how to structure a modular, maintainable jQuery-based SPA with basic routing and views.",
+      "stack": [
+        "jQuery",
+        "Webpack",
+        "Bootstrap",
+        "Firebase"
+      ],
+      "links": {
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/spa-prototype-w-jquery"
+        }
+      },
+      "img": [
+        "/space-turism-desktop.jpeg",
+        "/space-turism-mobile.jpeg"
+      ]
+    },
+    {
       "index": 2,
+      "uid": "yelav-personal-website",
       "title": "Personal Website",
-      "role": "Developer",
+      "role": "Web Developer",
       "content": "My personal portfolio website repository. This site showcases selected projects, technologies I’ve worked with, and my experience as a Web Developer.",
       "stack": [
         "Typescript",
@@ -13,28 +37,14 @@
         "Framer Motion"
       ],
       "links": {
-        "repo": "https://github.com/ichiklaus/Yelav",
-        "site": "https://yelav.netlify.app/"
-      },
-      "img": [
-        "/space-turism-desktop.jpeg",
-        "/space-turism-mobile.jpeg"
-      ]
-    },
-    {
-      "index": 1,
-      "title": "SPA Prototype With jQuery",
-      "role": "Developer",
-      "content": "Single Page Application (SPA) prototype built with jQuery, focused on demonstrating a simple authentication flow and dashboard layout without relying on modern frontend frameworks. It serves as an example of how to structure a modular, maintainable jQuery-based SPA with basic routing and views.",
-      "stack": [
-        "jQuery",
-        "Webpack",
-        "Bootstrap",
-        "Firebase"
-      ],
-      "links": {
-        "repo": "https://github.com/ichiklaus/spa-prototype-w-jquery",
-        "site": ""
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/Yelav"
+        },
+        "site": {
+          "isExternal": true,
+          "url": "https://yelav.netlify.app/"
+        }
       },
       "img": [
         "/space-turism-desktop.jpeg",
@@ -43,6 +53,7 @@
     },
     {
       "index": 3,
+      "uid": "space-tourism-multi-page",
       "title": "Space tourism multi-page website",
       "role": "Frontend Developer",
       "content": "This is a multi-page website built with react-router and animated with Framer Motion.",
@@ -53,8 +64,14 @@
         "Netlify"
       ],
       "links": {
-        "repo": "https://github.com/ichiklaus/space-tourism-website-main/",
-        "site": "https://ichiklaus-space-tourism.netlify.app/"
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/space-tourism-website-main/"
+        },
+        "site": {
+          "isExternal": true,
+          "url": "https://ichiklaus-space-tourism.netlify.app/"
+        }
       },
       "img": [
         "/space-turism-desktop.jpeg",
@@ -63,6 +80,27 @@
     },
     {
       "index": 4,
+      "uid": "utm-app-design",
+      "title": "Archived Concept Project",
+      "role": "Visual Design",
+      "content": "Mobile application prototype for integrating online student services at Universidad Técnica de Manabí.",
+      "stack": [
+        "Figma"
+      ],
+      "links": {
+        "case_study": {
+          "isExternal": false,
+          "url": "/case-study/utm-app-design"
+        }
+      },
+      "img": [
+        "/space-turism-desktop.jpeg",
+        "/space-turism-mobile.jpeg"
+      ]
+    },
+    {
+      "index": 5,
+      "uid": "clipboard-landing-page",
       "title": "Clipboard Landing Page",
       "role": "Frontend Developer",
       "content": "A simple landing page for a fictional digital product built with semantic HTML and custom CSS.",
@@ -72,11 +110,266 @@
         "GitHub Pages"
       ],
       "links": {
-        "repo": "https://github.com/ichiklaus/fem-clipboard/",
-        "site": "https://ichiklaus.github.io/fem-clipboard/"
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/fem-clipboard/"
+        },
+        "site": {
+          "isExternal": true,
+          "url": "https://ichiklaus.github.io/fem-clipboard/"
+        }
       },
       "img": [
         "/clipboard-landing.png"
+      ]
+    }
+  ],
+  "case_studies": [
+    {
+      "index": 1,
+      "uid": "utm-app-design",
+      "project_title": "App prototype for integrating online student services at Universidad Técnica de Manabí.",
+      "ref": "utm-app-design",
+      "role": [
+        "Visual Design"
+      ],
+      "stack": [
+        "Figma"
+      ],
+      "project_type": "University App Concept (Unsubmitted)",
+      "duration": "~3 months",
+      "content": [
+        {
+          "title": "Overview",
+          "name": "overview",
+          "description": "Back in 2022, while at my last semester at university, I initiated the design of a mobile app as my final graduation project. It was meant to help fellow students manage academic tasks more efficiently. The concept aimed to streamline access to key university services such as course schedules, enrollment, academic requests, and notifications. \nAlthough the project was ultimately cancelled and never developed, it served as one of my first full-cycle design experiences — from research and ideation to wireframing and component design in Figma."
+        },
+        {
+          "title": "Problem",
+          "name": "problem_overview",
+          "description": "Many students (myself included) found the university’s online systems fragmented and unintuitive, especially on mobile. Key actions like enrolling in courses, viewing schedules, or making official requests often required navigating outdated web portals. \nI wanted to explore how a unified mobile app could improve this experience by centralizing these actions in a clean, intuitive interface."
+        }
+      ],
+      "dynamic_content": [
+        {
+          "title": "Site Map",
+          "name": "site_map",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "The app was organized into five primary sections: "
+              },
+              "2": {
+                "type": "ul",
+                "content": [
+                  "Login",
+                  "Home",
+                  "Mi Perfil",
+                  "Reportes",
+                  "Solicitudes",
+                  "T̶u̶t̶o̶r̶i̶a̶s̶"
+                ]
+              },
+              "3": {
+                "type": "p",
+                "content": "Note: Tutorias was not in the scope of the project development, but it was defined."
+              }
+            }
+          ],
+          "image_urls": [
+            {
+              "alt": "",
+              "url": "/case-study/utm-app-design/sitemap.png"
+            }
+          ]
+        },
+        {
+          "title": "User Flow",
+          "name": "user_flow",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "I created user flows to map out common journeys."
+              },
+              "3": {
+                "type": "p",
+                "content": "These flows helped define the screen structure and interaction logic for the prototype."
+              }
+            }
+          ],
+          "image_urls": [
+            {
+              "alt": "",
+              "url": "/case-study/utm-app-design/user_flow.png"
+            }
+          ]
+        },
+        {
+          "title": "Design Process",
+          "name": "design_process",
+          "description": "This project followed a structured and iterative design process, beginning with low-fidelity sketches and evolving into a polished high-fidelity prototype. My goal was to create a user-centered experience that balanced clarity, functionality, and visual appeal."
+        },
+        {
+          "title": "From Wireframes to Interface",
+          "name": "prototyping",
+          "description": "To kick off the design phase, I translated early research and ideas into rough visual concepts. These wireframes helped define the layout, core features, and navigation logic. Working in low fidelity allowed for quick iterations and feedback without getting caught up in visuals too early. \n Once the structure was validated, I moved on to crafting a detailed high-fidelity prototype using Figma. The focus here was on visual hierarchy, consistency, and interaction flow, ensuring that the design aligned with usability best practices and real-world functionality.",
+          "links": [
+            {
+              "url": "https://app.uizard.io/p/1912434a",
+              "name": "Low Fidelity Prototype (Part 1)"
+            },
+            {
+              "url": "https://app.uizard.io/p/d07e9a2c",
+              "name": "Low Fidelity Prototype (Part 2)"
+            },
+            {
+              "url": "https://www.figma.com/proto/5nJZOFZCF12ai8VmLHeTwY/APP-TESIS?page-id=0%3A1&node-id=1-2&p=f&viewport=311%2C1275%2C0.15&t=eg4QYXugsoWtvpNX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2",
+              "name": "High Fidelity Prototype in Figma"
+            }
+          ],
+          "steps": [
+            {
+              "title": "Login",
+              "showFinalVersion": true,
+              "description": "Login screen allowing students to securely access their account.",
+              "image_urls": [
+                {
+                  "alt": "Login screen",
+                  "url": "/case-study/utm-app-design/lofi/Login.png"
+                },
+                {
+                  "alt": "",
+                  "url": "/case-study/utm-app-design/hifi/LOGIN_SCREEN_App_Estudiantes.png"
+                }
+              ]
+            },
+            {
+              "title": "Home",
+              "showFinalVersion": true,
+              "description": "Central dashboard with a warming wecome note and quick access to key sections like Requests, Reports, and Tutoring.",
+              "image_urls": [
+                {
+                  "alt": "Home screen",
+                  "url": "/case-study/utm-app-design/lofi/Home.png"
+                },
+                {
+                  "alt": "Home screen",
+                  "url": "/case-study/utm-app-design/hifi/HOME_SCREEN_App_Estudiantes.png"
+                }
+              ]
+            },
+            {
+              "title": "Reportes",
+              "showFinalVersion": true,
+              "description": "Reports hub where students can access Certificates, Schedules, Grades, Academic History, and Career Curriculums.",
+              "image_urls": [
+                {
+                  "alt": "Reports overview",
+                  "url": "/case-study/utm-app-design/lofi/Reportes.png"
+                },
+                {
+                  "alt": "Reports overview",
+                  "url": "/case-study/utm-app-design/hifi/MIS_REPORTES_SCREEN_App_Estudiantes.png"
+                }
+              ]
+            },
+            {
+              "title": "Certificados",
+              "showFinalVersion": true,
+              "description": "Section to request various official university certificates (e.g. enrollment, ID, grades).",
+              "image_urls": [
+                {
+                  "alt": "Certificates overview",
+                  "url": "/case-study/utm-app-design/lofi/Certificados.png"
+                },
+                {
+                  "alt": "Certificates overview",
+                  "url": "/case-study/utm-app-design/hifi/MIS_CERTIFICADOS_SCREEN_App_Estudiantes.png"
+                }
+              ]
+            },
+            {
+              "title": "Horarios",
+              "showFinalVersion": true,
+              "description": "Weekly course schedule view, helping students plan and manage their academic time.",
+              "image_urls": [
+                {
+                  "alt": "Schedules overview",
+                  "url": "/case-study/utm-app-design/lofi/Horarios.png"
+                },
+                {
+                  "alt": "Schedules overview",
+                  "url": "/case-study/utm-app-design/hifi/MIS_HORARIOS_SCREEN_App_Estudiantes.png"
+                }
+              ]
+            },
+            {
+              "title": "Calificaciones",
+              "showFinalVersion": true,
+              "description": "Section where students can review their grades for each subject by period.",
+              "image_urls": [
+                {
+                  "alt": "Grades overview",
+                  "url": "/case-study/utm-app-design/lofi/Calificaciones.png"
+                },
+                {
+                  "alt": "Grades overview",
+                  "url": "/case-study/utm-app-design/hifi/MIS_CALIFICACIONES_SCREEN_App_Estudiantes .png"
+                }
+              ]
+            },
+            {
+              "title": "Solicitudes",
+              "showFinalVersion": true,
+              "description": "Allows students to submit academic requests (e.g. subject change, enrollment assistance, general procedures).",
+              "image_urls": [
+                {
+                  "alt": "Enrollment request",
+                  "url": "/case-study/utm-app-design/lofi/Solicitudes.png"
+                },
+                {
+                  "alt": "Enrollment request",
+                  "url": "/case-study/utm-app-design/hifi/MIS_SOLICITUDES_SCREEN_App_Estudiantes.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Reflection",
+          "name": "reflection",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "While this was an early project in my journey, it was a key learning moment. I got hands-on experience with: "
+              },
+              "2": {
+                "type": "ul",
+                "content": [
+                  "Structuring user flows and sitemaps",
+                  "Designing components and building scalable UI systems in Figma",
+                  "Thinking from a user-first perspective",
+                  "Working with design constraints and prioritizing usability"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Final Thoughts",
+          "name": "final_thoughts",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "Although this prototype was never built or submitted, it reflects my early passion for problem-solving through design. It helped me develop empathy for users and laid the foundation for how I approach UI/UX in my current projects as a web developer."
+              }
+            }
+          ]
+        }
       ]
     }
   ],
@@ -113,6 +406,7 @@
         "Vite",
         "React",
         "Next.js",
+        "Typescript",
         "Webpack",
         "Firebase",
         "Node.js",
