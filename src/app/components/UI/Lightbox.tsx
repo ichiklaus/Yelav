@@ -25,7 +25,7 @@ export const Lightbox: React.FC<LightboxProps> = ({
       scrollable={false}
     >
       <div className='w-full h-full flex justify-center items-center'>
-        <Image
+        <img
           width={0}
           height={0}
           sizes='100vw'

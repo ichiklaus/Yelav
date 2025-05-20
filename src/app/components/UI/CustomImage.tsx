@@ -19,7 +19,7 @@ export default function CustomImage({
     <figure
       className={'shadow-md rounded-lg custom-image-figure-wrapper' + className}
     >
-      <Image
+      <img
         width={0}
         height={0}
         sizes='100vw'

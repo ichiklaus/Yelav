@@ -67,7 +67,7 @@ export default function BeforeAfterSlider({
           className='absolute top-0 left-0 right-0 bottom-0'
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.095)', zIndex: 1 }}
         />
-        <Image
+        <img
           alt={beforeImage.alt}
           width={0}
           height={0}
@@ -81,7 +81,7 @@ export default function BeforeAfterSlider({
             clipPath: `inset(0 ${100 - sliderPosition}% 0 0)`,
           }}
         >
-          <Image
+          <img
             alt={afterImage.alt}
             width={0}
             height={0}
