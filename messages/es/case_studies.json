@@ -1,0 +1,251 @@
+{
+  "case_studies": [
+    {
+      "index": 1,
+      "uid": "utm-app-design",
+      "project_title": "Prototipo de app para integrar los servicios estudiantiles en línea de la Universidad Técnica de Manabí.",
+      "ref": "utm-app-design",
+      "role": [
+        "Diseño visual"
+      ],
+      "stack": [
+        "Figma"
+      ],
+      "project_type": "Concepto de App Universitaria (No presentada)",
+      "duration": "~3 meses",
+      "content": [
+        {
+          "title": "Resumen",
+          "name": "overview",
+          "description": "En 2022, durante mi último semestre universitario, inicié el diseño de una aplicación móvil como proyecto final de titulación. La idea era ayudar a otros estudiantes a gestionar sus actividades académicas de forma más eficiente. El concepto buscaba simplificar el acceso a servicios clave como horarios de clases, matrículas, solicitudes académicas y notificaciones.\nAunque el proyecto fue cancelado y no llegó a desarrollarse, representó una de mis primeras experiencias completas en diseño: desde la investigación y la ideación, hasta wireframes y diseño de componentes en Figma."
+        },
+        {
+          "title": "Problema",
+          "name": "problem_overview",
+          "description": "Muchos estudiantes (incluyéndome) encontraban los sistemas en línea de la universidad fragmentados y poco intuitivos, especialmente desde el celular. Acciones importantes como matricularse, ver horarios o hacer solicitudes oficiales requerían navegar por portales web obsoletos.\nQuise explorar cómo una app móvil unificada podía mejorar esta experiencia, centralizando estas acciones en una interfaz limpia e intuitiva."
+        }
+      ],
+      "dynamic_content": [
+        {
+          "title": "Mapa del sitio",
+          "name": "site_map",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "La app fue organizada en cinco secciones principales:"
+              },
+              "2": {
+                "type": "ul",
+                "content": [
+                  "Inicio de sesión",
+                  "Inicio",
+                  "Mi Perfil",
+                  "Reportes",
+                  "Solicitudes",
+                  "T̶u̶t̶o̶r̶í̶a̶s̶"
+                ]
+              },
+              "3": {
+                "type": "p",
+                "content": "Nota: La sección de Tutorías estaba definida, pero no fue parte del desarrollo."
+              }
+            }
+          ],
+          "image_urls": [
+            {
+              "alt": "",
+              "url": "/case-study/utm-app-design/sitemap.png"
+            }
+          ]
+        },
+        {
+          "title": "Flujo de usuario",
+          "name": "user_flow",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "Diseñé flujos de usuario para mapear las rutas más comunes."
+              },
+              "3": {
+                "type": "p",
+                "content": "Estos flujos ayudaron a definir la estructura de pantallas y la lógica de interacción para el prototipo."
+              }
+            }
+          ],
+          "image_urls": [
+            {
+              "alt": "",
+              "url": "/case-study/utm-app-design/user_flow.png"
+            }
+          ]
+        },
+        {
+          "title": "Proceso de diseño",
+          "name": "design_process",
+          "description": "Este proyecto siguió un proceso de diseño estructurado e iterativo, comenzando con bocetos de baja fidelidad y evolucionando hacia un prototipo pulido de alta fidelidad. Mi objetivo fue crear una experiencia centrada en el usuario que combinara claridad, funcionalidad y atractivo visual."
+        },
+        {
+          "title": "De los wireframes a la interfaz",
+          "name": "prototyping",
+          "description": "Para dar inicio a la fase de diseño, traduje la investigación inicial e ideas en conceptos visuales preliminares. Estos wireframes ayudaron a definir la estructura, funciones clave y lógica de navegación. Trabajar en baja fidelidad me permitió iterar rápidamente y recibir retroalimentación sin enfocarme demasiado en lo visual al principio.\nUna vez validada la estructura, desarrollé un prototipo detallado de alta fidelidad en Figma. Aquí el enfoque estuvo en jerarquía visual, consistencia y flujo de interacción, asegurando que el diseño cumpliera con buenas prácticas de usabilidad y funcionalidad real.",
+          "links": [
+            {
+              "url": "https://app.uizard.io/p/1912434a",
+              "name": "Prototipo de baja fidelidad (Parte 1)"
+            },
+            {
+              "url": "https://app.uizard.io/p/d07e9a2c",
+              "name": "Prototipo de baja fidelidad (Parte 2)"
+            },
+            {
+              "url": "https://www.figma.com/proto/5nJZOFZCF12ai8VmLHeTwY/APP-TESIS?page-id=0%3A1&node-id=1-2&p=f&viewport=311%2C1275%2C0.15&t=eg4QYXugsoWtvpNX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2",
+              "name": "Prototipo de alta fidelidad en Figma"
+            }
+          ],
+          "steps": [
+            {
+              "title": "Inicio de sesión",
+              "showFinalVersion": true,
+              "description": "Pantalla de ingreso para que los estudiantes accedan a su cuenta de forma segura.",
+              "image_urls": [
+                {
+                  "alt": "Pantalla de inicio de sesión",
+                  "url": "/case-study/utm-app-design/lofi/Login.png"
+                },
+                {
+                  "alt": "",
+                  "url": "/case-study/utm-app-design/hifi/LOGIN_SCREEN_App_Estudiantes.png"
+                }
+              ]
+            },
+            {
+              "title": "Inicio",
+              "showFinalVersion": true,
+              "description": "Panel central con un mensaje de bienvenida y acceso rápido a secciones como Solicitudes, Reportes y Tutorías.",
+              "image_urls": [
+                {
+                  "alt": "Pantalla de inicio",
+                  "url": "/case-study/utm-app-design/lofi/Home.png"
+                },
+                {
+                  "alt": "Pantalla de inicio",
+                  "url": "/case-study/utm-app-design/hifi/HOME_SCREEN_App_Estudiantes.png"
+                }
+              ]
+            },
+            {
+              "title": "Reportes",
+              "showFinalVersion": true,
+              "description": "Centro de reportes donde los estudiantes pueden acceder a certificados, horarios, calificaciones, historial académico y mallas curriculares.",
+              "image_urls": [
+                {
+                  "alt": "Resumen de reportes",
+                  "url": "/case-study/utm-app-design/lofi/Reportes.png"
+                },
+                {
+                  "alt": "Resumen de reportes",
+                  "url": "/case-study/utm-app-design/hifi/MIS_REPORTES_SCREEN_App_Estudiantes.png"
+                }
+              ]
+            },
+            {
+              "title": "Certificados",
+              "showFinalVersion": true,
+              "description": "Sección para solicitar distintos certificados oficiales de la universidad (por ejemplo, matrícula, identidad, notas).",
+              "image_urls": [
+                {
+                  "alt": "Vista de certificados",
+                  "url": "/case-study/utm-app-design/lofi/Certificados.png"
+                },
+                {
+                  "alt": "Vista de certificados",
+                  "url": "/case-study/utm-app-design/hifi/MIS_CERTIFICADOS_SCREEN_App_Estudiantes.png"
+                }
+              ]
+            },
+            {
+              "title": "Horarios",
+              "showFinalVersion": true,
+              "description": "Vista semanal de horarios de clases para ayudar a los estudiantes a planificar su tiempo académico.",
+              "image_urls": [
+                {
+                  "alt": "Resumen de horarios",
+                  "url": "/case-study/utm-app-design/lofi/Horarios.png"
+                },
+                {
+                  "alt": "Resumen de horarios",
+                  "url": "/case-study/utm-app-design/hifi/MIS_HORARIOS_SCREEN_App_Estudiantes.png"
+                }
+              ]
+            },
+            {
+              "title": "Calificaciones",
+              "showFinalVersion": true,
+              "description": "Sección donde los estudiantes pueden revisar sus notas por materia y por periodo académico.",
+              "image_urls": [
+                {
+                  "alt": "Resumen de calificaciones",
+                  "url": "/case-study/utm-app-design/lofi/Calificaciones.png"
+                },
+                {
+                  "alt": "Resumen de calificaciones",
+                  "url": "/case-study/utm-app-design/hifi/MIS_CALIFICACIONES_SCREEN_App_Estudiantes .png"
+                }
+              ]
+            },
+            {
+              "title": "Solicitudes",
+              "showFinalVersion": true,
+              "description": "Permite a los estudiantes enviar solicitudes académicas (por ejemplo, cambio de asignatura, ayuda con matrícula, trámites generales).",
+              "image_urls": [
+                {
+                  "alt": "Vista de solicitudes",
+                  "url": "/case-study/utm-app-design/lofi/Solicitudes.png"
+                },
+                {
+                  "alt": "Vista de solicitudes",
+                  "url": "/case-study/utm-app-design/hifi/MIS_SOLICITUDES_SCREEN_App_Estudiantes.png"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Reflexión",
+          "name": "reflection",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "Aunque fue uno de mis primeros proyectos, marcó un momento clave en mi proceso de aprendizaje. Pude ganar experiencia práctica con:"
+              },
+              "2": {
+                "type": "ul",
+                "content": [
+                  "Estructurar flujos de usuario y mapas del sitio",
+                  "Diseñar componentes y construir sistemas de UI escalables en Figma",
+                  "Pensar siempre desde la perspectiva del usuario",
+                  "Trabajar con limitaciones de diseño y priorizar la usabilidad"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Conclusiones",
+          "name": "final_thoughts",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "Aunque este prototipo no se desarrolló ni fue presentado oficialmente, refleja mi pasión temprana por resolver problemas a través del diseño. Me ayudó a desarrollar empatía con los usuarios y sentó las bases de cómo abordo el diseño de interfaces y experiencia de usuario en mis proyectos actuales como desarrollador web."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

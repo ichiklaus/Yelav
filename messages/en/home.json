@@ -1,0 +1,32 @@
+{
+  "hero_section": {
+    "greeting": "Hello, I'm",
+    "name": "Nicolás",
+    "title_prefix": "A",
+    "title_main": "Web",
+    "title_suffix": "Developer"
+  },
+  "about_section": {
+    "title": "About me",
+    "content_1": "I'm a Web Developer with a degree in Computer Systems Engineering who enjoys creating amazing web products and delivering great user experiences",
+    "content_2": "And these are some of the technologies I’ve used to build those experiences:",
+    "skills": [
+      "HTML5 & CSS3",
+      "JavaScript/Typescript",
+      "jQuery",
+      "React.js",
+      "Firebase",
+      "Wordpress",
+      "Node.js",
+      "Express.js",
+      "Bootstrap",
+      "TailwindCSS"
+    ]
+  },
+  "experience_section": {
+    "title": "Experience"
+  },
+  "projects_section": {
+    "title": "Personal Projects"
+  }
+}

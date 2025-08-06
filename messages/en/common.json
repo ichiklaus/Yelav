@@ -1,0 +1,36 @@
+{
+  "header": {
+    "nav": [
+      {
+        "label": "Home",
+        "link": "/#home"
+      },
+      {
+        "label": "About",
+        "link": "/#about"
+      },
+      {
+        "label": "Experience",
+        "link": "/#experience"
+      },
+      {
+        "label": "Projects",
+        "link": "/#projects"
+      },
+      {
+        "label": "Résumé",
+        "link": "/docs/resume_en.pdf"
+      }
+    ]
+  },
+  "footer": {
+    "copyright_note": "Yeraldo Nicolas Moreira. All Rights Reserved."
+  },
+  "case_study": {
+    "intro": {
+      "0": "Role",
+      "1": "Tools",
+      "2": "Project Type"
+    }
+  }
+}

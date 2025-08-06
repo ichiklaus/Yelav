@@ -1,0 +1,39 @@
+{
+  "experience": [
+    {
+      "key": "acs",
+      "company": "AlphaCrew Studio",
+      "link": "https://alphacrewstudio.com/",
+      "role": "Desarrollador Web",
+      "period": {
+        "start": "2022-07-28",
+        "end": "Actualidad"
+      },
+      "tasks": [
+        "Desarrollé una aplicación para generar videos utilizando un motor de renderizado externo, con integración dinámica de locuciones y soporte para renderizado masivo.",
+        "Construí módulos completos para un panel administrativo en una plataforma de Video Marketing, incluyendo analíticas, notificaciones y gestión de pedidos y contactos.",
+        "Lideré el desarrollo de módulos de gestión empresarial como seguimiento de candidatos, nómina y sistemas de programación.",
+        "Automatizé tareas operativas utilizando Google Cloud Scheduler y flujos de trabajo por correo electrónico.",
+        "Implementé funcionalidades dinámicas e interfaces personalizadas.",
+        "Optimizé el rendimiento del frontend y la compatibilidad entre navegadores.",
+        "Personalicé soluciones frontend en WordPress, adaptando diseños e interacciones según los requerimientos del cliente."
+      ],
+      "tags": [
+        "WordPress",
+        "jQuery",
+        "JavaScript",
+        "HTML y CSS",
+        "Parcel.js",
+        "Vite",
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Webpack",
+        "Firebase",
+        "Node.js",
+        "Express.js",
+        "EJS"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "hero_section": {
+    "greeting": "Hola, soy",
+    "name": "Nicolás",
+    "title_prefix": "Desarrollador",
+    "title_main": "Web",
+    "title_suffix": ""
+  },
+  "about_section": {
+    "title": "Sobre mí",
+    "content_1": "Soy desarrollador web y tengo un título en Ingeniería en Sistemas. Me apasiona crear productos digitales que no solo se vean bien, sino que también ofrezcan una gran experiencia para las personas que los usan.",
+    "content_2": "Estas son algunas de las tecnologías con las que he trabajado para lograrlo:",
+    "skills": [
+      "HTML5 y CSS3",
+      "JavaScript/TypeScript",
+      "jQuery",
+      "React.js",
+      "Firebase",
+      "WordPress",
+      "Node.js",
+      "Express.js",
+      "Bootstrap",
+      "TailwindCSS"
+    ]
+  },
+  "experience_section": {
+    "title": "Experiencia"
+  },
+  "projects_section": {
+    "title": "Proyectos"
+  }
+}

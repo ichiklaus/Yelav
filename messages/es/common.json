@@ -1,0 +1,36 @@
+{
+  "header": {
+    "nav": [
+      {
+        "label": "Inicio",
+        "link": "/#home"
+      },
+      {
+        "label": "Sobre mí",
+        "link": "/#about"
+      },
+      {
+        "label": "Experiencia",
+        "link": "/#experience"
+      },
+      {
+        "label": "Proyectos",
+        "link": "/#projects"
+      },
+      {
+        "label": "CV",
+        "link": "/docs/resume_es.pdf"
+      }
+    ]
+  },
+  "footer": {
+    "copyright_note": "Yeraldo Nicolas Moreira. Todos los Derechos Reservados."
+  },
+  "case_study": {
+    "intro": {
+      "0": "Rol",
+      "1": "Herramientas",
+      "2": "Tipo"
+    }
+  }
+}

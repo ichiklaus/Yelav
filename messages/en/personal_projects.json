@@ -1,0 +1,127 @@
+{
+  "personal_projects": [
+    {
+      "index": 1,
+      "uid": "spa-prototype-jquery",
+      "title": "SPA Prototype With jQuery",
+      "role": "Web Developer",
+      "content": "Single Page Application (SPA) prototype built with jQuery to showcase my understanding of component-based architecture, modular code organization, and maintainable frontend design. The app includes a basic authentication flow, dashboard layout, and custom client-side routing—all implemented without modern frameworks. This project demonstrates my ability to apply architectural thinking even in legacy or low-dependency environments.",
+      "stack": [
+        "jQuery",
+        "Webpack",
+        "Bootstrap",
+        "Firebase"
+      ],
+      "links": {
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/spa-prototype-w-jquery"
+        }
+      },
+      "img": [
+        "/space-turism-desktop.jpeg",
+        "/space-turism-mobile.jpeg"
+      ]
+    },
+    {
+      "index": 2,
+      "uid": "yelav-personal-website",
+      "title": "Personal Website",
+      "role": "Web Developer",
+      "content": "My personal portfolio website repository. This site showcases selected projects, technologies I’ve worked with, and my experience as a Web Developer.",
+      "stack": [
+        "Typescript",
+        "React.js",
+        "Next.js",
+        "Tailwindcss",
+        "Framer Motion"
+      ],
+      "links": {
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/Yelav"
+        },
+        "site": {
+          "isExternal": true,
+          "url": "https://yelav.netlify.app/"
+        }
+      },
+      "img": [
+        "/space-turism-desktop.jpeg",
+        "/space-turism-mobile.jpeg"
+      ]
+    },
+    {
+      "index": 3,
+      "uid": "space-tourism-multi-page",
+      "title": "Space tourism multi-page website",
+      "role": "Frontend Developer",
+      "content": "This is a multi-page website built with react-router and animated with Framer Motion.",
+      "stack": [
+        "React",
+        "React-Router",
+        "Framer Motion",
+        "Netlify"
+      ],
+      "links": {
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/space-tourism-website-main/"
+        },
+        "site": {
+          "isExternal": true,
+          "url": "https://ichiklaus-space-tourism.netlify.app/"
+        }
+      },
+      "img": [
+        "/space-turism-desktop.jpeg",
+        "/space-turism-mobile.jpeg"
+      ]
+    },
+    {
+      "index": 4,
+      "uid": "utm-app-design",
+      "title": "Archived Concept Project",
+      "role": "Visual Design",
+      "content": "Mobile application prototype for integrating online student services at Universidad Técnica de Manabí.",
+      "stack": [
+        "Figma"
+      ],
+      "links": {
+        "case_study": {
+          "isExternal": false,
+          "url": "/case-study/utm-app-design"
+        }
+      },
+      "img": [
+        "/space-turism-desktop.jpeg",
+        "/space-turism-mobile.jpeg"
+      ]
+    },
+    {
+      "index": 5,
+      "uid": "clipboard-landing-page",
+      "title": "Clipboard Landing Page",
+      "role": "Frontend Developer",
+      "content": "A simple landing page for a fictional digital product built with semantic HTML and custom CSS.",
+      "stack": [
+        "HTML5",
+        "CSS3",
+        "GitHub Pages"
+      ],
+      "links": {
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/fem-clipboard/"
+        },
+        "site": {
+          "isExternal": true,
+          "url": "https://ichiklaus.github.io/fem-clipboard/"
+        }
+      },
+      "img": [
+        "/clipboard-landing.png"
+      ]
+    }
+  ]
+}
