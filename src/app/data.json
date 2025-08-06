@@ -5,7 +5,7 @@
       "uid": "spa-prototype-jquery",
       "title": "SPA Prototype With jQuery",
       "role": "Web Developer",
-      "content": "Single Page Application (SPA) prototype built with jQuery, focused on demonstrating a simple authentication flow and dashboard layout without relying on modern frontend frameworks. It serves as an example of how to structure a modular, maintainable jQuery-based SPA with basic routing and views.",
+      "content": "Single Page Application (SPA) prototype built with jQuery to showcase my understanding of component-based architecture, modular code organization, and maintainable frontend design. The app includes a basic authentication flow, dashboard layout, and custom client-side routing—all implemented without modern frameworks. This project demonstrates my ability to apply architectural thinking even in legacy or low-dependency environments.",
       "stack": [
         "jQuery",
         "Webpack",
