@@ -113,6 +113,17 @@ export default function NavList() {
               Projects
             </motion.a>
           </li>
+          <li>
+            <motion.a
+              href='/docs/resume.pdf'
+              className=''
+              whileHover={{
+                color: '#B488FF',
+              }}
+            >
+              Résumé
+            </motion.a>
+          </li>
         </ul>
       </nav>
       <div className='hamburger-wrapper' onClick={toggleHamburger}>
