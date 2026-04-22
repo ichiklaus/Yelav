@@ -1,7 +1,7 @@
 import PersonalProjects from './PersonalProjects';
 import Work from './Work';
 
-export default function portfolio() {
+export default function Portfolio() {
   return (
     <>
       <Work />
