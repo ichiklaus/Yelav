@@ -246,6 +246,141 @@
           ]
         }
       ]
+    },
+    {
+      "index": 2,
+      "uid": "real-time-trivia-system",
+      "project_title": "Plataforma de Trivia Interactiva en Tiempo Real para Streaming Deportivo",
+      "ref": "real-time-trivia-system",
+      "role": [
+        "Desarrollo Full-Stack",
+        "Arquitectura del Sistema",
+        "Prototipado de Producto"
+      ],
+      "stack": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Remotion",
+        "WebSockets",
+        "Firebase"
+      ],
+      "project_type": "Sistema en Producción (Proyecto para cliente bajo NDA)",
+      "duration": "~6 meses",
+      "content": [
+        {
+          "title": "Overview",
+          "name": "overview",
+          "description": "Este proyecto consistió en diseñar y desarrollar un sistema de trivia interactiva en tiempo real para un entorno de streaming deportivo. La idea era crear una experiencia de segunda pantalla donde los espectadores pudieran participar en juegos de trivia mientras veían la transmisión.\n\nLa plataforma está compuesta por dos elementos principales: un motor de generación de video que produce los segmentos de trivia utilizados en la transmisión y una aplicación web móvil donde los usuarios participan en sesiones sincronizadas de trivia. El sistema se integra con la plataforma de streaming mediante WebSockets para coordinar gameplay, rankings y sesiones de jugadores en tiempo real."
+        },
+        {
+          "title": "Problem",
+          "name": "problem_overview",
+          "description": "Las plataformas de streaming deportivo suelen tener dificultades para mantener la atención del público durante los descansos entre eventos en vivo. Aunque la publicidad ocupa parte de ese espacio, rara vez genera interacción real con la audiencia.\n\nEl objetivo de este proyecto fue explorar cómo transformar a los espectadores pasivos en participantes activos mediante un sistema de trivia sincronizado con la transmisión."
+        }
+      ],
+      "dynamic_content": [
+        {
+          "title": "Arquitectura del Sistema",
+          "name": "system_architecture",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "La plataforma se diseñó como un sistema distribuido en tiempo real compuesto por tres elementos principales:"
+              },
+              "2": {
+                "type": "ul",
+                "content": [
+                  "Un motor de generación de video para producir los segmentos de trivia",
+                  "Un backend encargado de gestionar el estado del juego y la sincronización",
+                  "Una aplicación web móvil donde los usuarios participan en la trivia"
+                ]
+              },
+              "3": {
+                "type": "p",
+                "content": "El backend se integra con la plataforma de streaming mediante WebSockets, permitiendo que la transmisión y la aplicación móvil permanezcan sincronizadas durante las sesiones de juego."
+              }
+            }
+          ],
+          "image_urls": []
+        },
+        {
+          "title": "Sincronización del Juego",
+          "name": "game_flow",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "Las sesiones de trivia se sincronizan entre la transmisión y la aplicación móvil mediante eventos enviados por WebSockets."
+              },
+              "2": {
+                "type": "p",
+                "content": "Cuando comienza un segmento de trivia en la transmisión, el backend envía eventos en tiempo real a los jugadores conectados para iniciar la sesión de juego en sus dispositivos."
+              }
+            }
+          ],
+          "image_urls": []
+        },
+        {
+          "title": "Motor de Generación de Video",
+          "name": "render_engine",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "Uno de los componentes clave del sistema es el motor de generación de video construido con Remotion. Este motor permite generar dinámicamente los segmentos de trivia utilizados durante la transmisión."
+              },
+              "2": {
+                "type": "p",
+                "content": "Preguntas, datos curiosos y citas pueden renderizarse programáticamente en videos, lo que permite generar nuevo contenido de trivia de forma flexible."
+              }
+            }
+          ],
+          "image_urls": []
+        },
+        {
+          "title": "Experiencia de Juego en la App",
+          "name": "mobile_app",
+          "description": "La aplicación web móvil permite a los usuarios participar en sesiones de trivia sincronizadas con la transmisión. Los jugadores responden preguntas en tiempo real y compiten en rankings durante el juego.",
+          "steps": [
+            {
+              "title": "Lobby del Juego",
+              "showFinalVersion": true,
+              "description": "Los jugadores ingresan a la sesión de trivia y esperan el inicio de la siguiente pregunta.",
+              "image_urls": []
+            },
+            {
+              "title": "Pregunta de Trivia",
+              "showFinalVersion": true,
+              "description": "Los jugadores responden preguntas de opción múltiple sincronizadas con la transmisión.",
+              "image_urls": []
+            },
+            {
+              "title": "Ranking",
+              "showFinalVersion": true,
+              "description": "Tabla de posiciones en tiempo real basada en puntaje y velocidad de respuesta.",
+              "image_urls": []
+            }
+          ]
+        },
+        {
+          "title": "Conclusiones",
+          "name": "reflection",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "Este proyecto representó una experiencia importante al trabajar con sistemas interactivos en tiempo real dentro de un entorno de producción."
+              },
+              "2": {
+                "type": "p",
+                "content": "Me permitió profundizar en arquitecturas basadas en WebSockets, sincronización de eventos en vivo y desarrollo de experiencias interactivas conectadas a transmisiones en streaming."
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

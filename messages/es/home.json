@@ -26,6 +26,9 @@
   "experience_section": {
     "title": "Experiencia"
   },
+  "selected_engineer_work_section": {
+    "title": "Trabajo Destacado de Ingeniería"
+  },
   "projects_section": {
     "title": "Proyectos"
   }

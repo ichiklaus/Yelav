@@ -24,29 +24,20 @@
         "Customized WordPress frontend solutions, adapting designs and interactions using themes, page builders, and plugins to meet client needs."
       ],
       "tasks": [
-        "Built a video generation app using a third-party render engine, enabling dynamic voiceover integration and bulk rendering support.",
-        "Developed full-stack dashboard modules—including analytics, notifications, and order/contact management—for a Video Marketing platform.",
-        "Led development of business management modules like applicant tracking, payroll, and scheduling systems.",
-        "Automated operational tasks using Google Cloud Scheduler and email workflows.",
-        "Implemented dynamic features and custom interfaces.",
-        "Optimized frontend performance and cross-browser compatibility.",
-        "Customized WordPress frontend solutions, adapting designs and interactions to meet client needs."
+        "Built a real-time interactive trivia platform for a sports streaming environment, including a Remotion-based video rendering engine and a synchronized mobile web app where viewers participate in live quizzes.",
+        "Developed backend services integrating with the streaming platform through WebSockets to synchronize gameplay, leaderboards, and player sessions.",
+        "Led development of dashboard modules for a video marketing platform including analytics, notifications, order management, and contacts.",
+        "Designed internal business systems such as applicant management, scheduling tools, payroll utilities, and employee time tracking."
       ],
       "tags": [
-        "Wordpress",
-        "jQuery",
-        "Javascript",
-        "HTML & CSS",
-        "Parcel.js",
-        "Vite",
-        "React",
-        "Next.js",
-        "Typescript",
-        "Webpack",
         "Firebase",
+        "Typescript",
+        "React",
+        "Websockets",
         "Node.js",
-        "Express.js",
-        "EJS"
+        "Remotion",
+        "Wordpress",
+        "jQuery"
       ]
     }
   ]

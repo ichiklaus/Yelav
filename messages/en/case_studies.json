@@ -1,5 +1,5 @@
 {
-"case_studies": [
+  "case_studies": [
     {
       "index": 1,
       "uid": "utm-app-design",
@@ -241,6 +241,165 @@
               "1": {
                 "type": "p",
                 "content": "Although this prototype was never built or submitted, it reflects my early passion for problem-solving through design. It helped me develop empathy for users and laid the foundation for how I approach UI/UX in my current projects as a web developer."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "uid": "real-time-trivia-system",
+      "project_title": "Real-Time Interactive Trivia Platform for Sports Streaming",
+      "ref": "real-time-trivia-system",
+      "role": [
+        "Full-Stack Development",
+        "System Architecture",
+        "Product Prototyping"
+      ],
+      "stack": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Remotion",
+        "WebSockets",
+        "Firebase"
+      ],
+      "project_type": "Production System (Client Project under NDA)",
+      "duration": "~6 months",
+      "content": [
+        {
+          "title": "Overview",
+          "name": "overview",
+          "description": "This project involved designing and building a real-time interactive trivia system for a sports streaming environment. The goal was to create an engaging second-screen experience where viewers could participate in trivia games while watching a live broadcast.\n\nThe platform consists of two main components: a video rendering engine that generates trivia segments for broadcast and a mobile-first web application where users participate in synchronized trivia sessions. The system integrates with the streaming platform using WebSockets to coordinate gameplay, leaderboards, and player sessions in real time."
+        },
+        {
+          "title": "Problem",
+          "name": "problem_overview",
+          "description": "Sports streaming platforms often struggle to maintain viewer engagement during breaks in live events. Traditional advertising fills some of this space, but it rarely creates meaningful interaction.\n\nThe goal of this project was to design a system that could transform passive viewers into active participants by allowing them to play synchronized trivia games while watching the broadcast."
+        }
+      ],
+      "dynamic_content": [
+        {
+          "title": "System Architecture",
+          "name": "system_architecture",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "The platform was designed as a real-time distributed system connecting three main components:"
+              },
+              "2": {
+                "type": "ul",
+                "content": [
+                  "A video rendering engine that generates trivia segments",
+                  "A backend service responsible for game state and synchronization",
+                  "A mobile web application where users play trivia in real time"
+                ]
+              },
+              "3": {
+                "type": "p",
+                "content": "The backend integrates with the streaming platform through WebSockets, allowing the broadcast and the mobile application to remain synchronized during gameplay."
+              }
+            }
+          ],
+          "image_urls": []
+        },
+        {
+          "title": "Game Synchronization Flow",
+          "name": "game_flow",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "Trivia sessions are synchronized between the broadcast and the mobile application using WebSockets."
+              },
+              "2": {
+                "type": "p",
+                "content": "When a trivia segment starts in the broadcast, the backend sends real-time events to connected players, triggering the start of the quiz session on their devices."
+              }
+            }
+          ],
+          "image_urls": []
+        },
+        {
+          "title": "Video Rendering Engine",
+          "name": "render_engine",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "A key component of the system is the video rendering engine built using Remotion. This engine dynamically generates trivia videos used during broadcast segments."
+              },
+              "2": {
+                "type": "p",
+                "content": "Content such as questions, facts, and quotes can be programmatically rendered into video segments, allowing the platform to generate new trivia content quickly."
+              }
+            }
+          ],
+          "image_urls": []
+        },
+        {
+          "title": "Mobile Gameplay Experience",
+          "name": "mobile_app",
+          "description": "The mobile web application allows users to participate in trivia sessions synchronized with the broadcast. Players answer questions in real time and compete on leaderboards during the game.",
+          "steps": [
+            {
+              "title": "Game Lobby",
+              "showFinalVersion": true,
+              "description": "Players join the trivia session and wait for the broadcast to start the next question.",
+              "image_urls": []
+            },
+            {
+              "title": "Trivia Question",
+              "showFinalVersion": true,
+              "description": "Players answer multiple-choice trivia questions synchronized with the broadcast.",
+              "image_urls": []
+            },
+            {
+              "title": "Leaderboard",
+              "showFinalVersion": true,
+              "description": "Real-time leaderboard showing top players based on score and response time.",
+              "image_urls": []
+            },
+            {
+              "title": "Player History",
+              "showFinalVersion": true,
+              "description": "Players can review previous trivia sessions and their performance over time.",
+              "image_urls": []
+            }
+          ]
+        },
+        {
+          "title": "Technical Challenges",
+          "name": "technical_challenges",
+          "description": [
+            {
+              "1": {
+                "type": "ul",
+                "content": [
+                  "Synchronizing trivia gameplay with a live broadcast",
+                  "Managing real-time player sessions and leaderboards",
+                  "Designing a scalable WebSocket communication layer",
+                  "Generating dynamic video content using a rendering engine",
+                  "Ensuring the mobile web experience performed reliably during live sessions"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Reflection",
+          "name": "reflection",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "This project was a significant opportunity to design and implement a production-scale interactive system. It required combining frontend development, backend services, real-time communication, and media generation workflows."
+              },
+              "2": {
+                "type": "p",
+                "content": "Working on this system strengthened my experience with real-time architectures and interactive product design, particularly in environments where multiple systems must remain synchronized."
               }
             }
           ]

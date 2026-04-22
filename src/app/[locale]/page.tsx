@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import Hero from '../../components/hero';
 import About from '../../components/about';
 import Experience from '../../components/experience';
-import Portfolio from '../../components/portfolio';
+import Portfolio from '../../components/Portfolio';
 
 config.autoAddCss = false;
 

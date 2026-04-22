@@ -2,29 +2,6 @@
   "personal_projects": [
     {
       "index": 1,
-      "uid": "spa-prototype-jquery",
-      "title": "Prototipo SPA con jQuery",
-      "role": "Desarrollador Web",
-      "content": "Prototipo de aplicación de una sola página (SPA) desarrollado con jQuery para demostrar mi comprensión de la arquitectura basada en componentes, organización modular del código y diseño frontend mantenible. La app incluye un flujo básico de autenticación, un diseño tipo panel y enrutamiento del lado del cliente personalizado, depender de frameworks modernos. Este proyecto refleja mi capacidad para aplicar principios arquitectónicos incluso en entornos con tecnologías legacy o con pocas dependencias.",
-      "stack": [
-        "jQuery",
-        "Webpack",
-        "Bootstrap",
-        "Firebase"
-      ],
-      "links": {
-        "repo": {
-          "isExternal": true,
-          "url": "https://github.com/ichiklaus/spa-prototype-w-jquery"
-        }
-      },
-      "img": [
-        "/space-turism-desktop.jpeg",
-        "/space-turism-mobile.jpeg"
-      ]
-    },
-    {
-      "index": 2,
       "uid": "yelav-personal-website",
       "title": "Sitio web personal",
       "role": "Desarrollador Web",
@@ -79,7 +56,7 @@
       ]
     },
     {
-      "index": 4,
+      "index": 2,
       "uid": "utm-app-design",
       "title": "Proyecto conceptual archivado",
       "role": "Diseño visual",
@@ -99,7 +76,7 @@
       ]
     },
     {
-      "index": 5,
+      "index": 4,
       "uid": "clipboard-landing-page",
       "title": "Landing page de Clipboard",
       "role": "Desarrollador Frontend",

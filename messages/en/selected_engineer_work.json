@@ -1,0 +1,51 @@
+{
+  "selected_engineer_work": [
+    {
+      "index": 0,
+      "uid": "real-time-trivia-system",
+      "title": "Real-Time Interactive Trivia System for Streaming",
+      "role": "Web Developer",
+      "content": "A production system designed to synchronize interactive trivia games with a live sports broadcast. The platform includes a video rendering engine built with Remotion that generates dynamic trivia content and a mobile web app where viewers participate in live quizzes during broadcast breaks. The backend integrates with the streaming platform through WebSockets to coordinate game sessions, leaderboards, and player activity in real time.",
+      "stack": [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "Remotion",
+        "WebSockets",
+        "Firebase"
+      ],
+      "links": {
+        "case_study": {
+          "isExternal": false,
+          "url": "/case-study/real-time-trivia-system"
+        }
+      },
+      "img": [
+        ""
+      ]
+    },
+    {
+      "index": 1,
+      "uid": "spa-prototype-jquery",
+      "title": "SPA Prototype With jQuery",
+      "role": "Web Developer",
+      "content": "Single Page Application (SPA) prototype built with jQuery to showcase my understanding of component-based architecture, modular code organization, and maintainable frontend design. The app includes a basic authentication flow, dashboard layout, and custom client-side routing—all implemented without modern frameworks. This project demonstrates my ability to apply architectural thinking even in legacy or low-dependency environments.",
+      "stack": [
+        "jQuery",
+        "Webpack",
+        "Bootstrap",
+        "Firebase"
+      ],
+      "links": {
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/spa-prototype-w-jquery"
+        }
+      },
+      "img": [
+        "/space-turism-desktop.jpeg",
+        "/space-turism-mobile.jpeg"
+      ]
+    }
+  ]
+}

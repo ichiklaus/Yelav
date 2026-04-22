@@ -22,6 +22,7 @@ export default function Page({ params }: DynamicRouteProps) {
   const currentCaseStudy = case_studies.filter(
     (item) => params.id === item.uid,
   )[0];
+  console.log(currentCaseStudy);
   
   return (
     <div className='app-container bg-body-black py-10 px-10'>

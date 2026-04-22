@@ -2,29 +2,28 @@
   "hero_section": {
     "greeting": "Hello, I'm",
     "name": "Nicolás",
-    "title_prefix": "A",
+    "title_prefix": "Full-Stack",
     "title_main": "Web",
     "title_suffix": "Developer"
   },
   "about_section": {
     "title": "About me",
-    "content_1": "I'm a Web Developer with a degree in Computer Systems Engineering who enjoys creating amazing web products and delivering great user experiences",
-    "content_2": "And these are some of the technologies I’ve used to build those experiences:",
+    "content_1": "I’m a Full-Stack Web Developer with a background in Computer Systems Engineering focused on building scalable web applications and interactive digital experiences. I enjoy working across the full stack — from designing user interfaces to developing backend services and real-time systems that power modern web products. In my work I focus on building reliable systems, performant interfaces, and products that provide meaningful user experiences",
+    "content_2": "Technologies I frequently work with:",
     "skills": [
-      "HTML5 & CSS3",
-      "JavaScript/Typescript",
-      "jQuery",
-      "React.js",
-      "Firebase",
-      "Wordpress",
+      "React",
+      "TypeScript",
       "Node.js",
-      "Express.js",
-      "Bootstrap",
-      "TailwindCSS"
+      "Firebase",
+      "WebSockets",
+      "Next.js"
     ]
   },
   "experience_section": {
     "title": "Experience"
+  },
+  "selected_engineer_work_section": {
+    "title": "Selected Engineer Work"
   },
   "projects_section": {
     "title": "Personal Projects"
