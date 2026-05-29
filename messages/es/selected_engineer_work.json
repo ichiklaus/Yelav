@@ -4,8 +4,8 @@
       "index": 0,
       "uid": "real-time-trivia-system",
       "title": "Sistema Interactivo de Trivia en Tiempo Real para Streaming",
-      "role": "Desarrollador Web",
-      "content": "Un sistema en producción diseñado para sincronizar juegos de trivia interactivos con una transmisión deportiva en vivo. La plataforma incluye un motor de renderizado de video desarrollado con Remotion, que genera contenido dinámico de trivia, y una aplicación web móvil donde los espectadores participan en cuestionarios en vivo durante las pausas de la transmisión. El backend se integra con la plataforma de streaming mediante WebSockets para coordinar las sesiones de juego, las tablas de clasificación y la actividad de los jugadores en tiempo real.",
+      "role": "Ingeniero de Software Full-Stack",
+      "content": "Sistema interactivo en tiempo real a escala de producción diseñado para participación second-screen sincronizada durante transmisiones deportivas en vivo.\n\nLa plataforma combina un pipeline de renderizado basado en Remotion que genera dinámicamente segmentos de video de trivia con una aplicación web mobile-first donde los espectadores participan en sesiones sincronizadas de trivia en vivo.\n\nEl backend se integra con el entorno de streaming mediante WebSockets para coordinar sincronización de estado del juego, sesiones de jugadores, leaderboards e interacciones de gameplay en tiempo real entre la transmisión y los dispositivos conectados.",
       "stack": [
         "React",
         "Node.js",
@@ -26,10 +26,40 @@
     },
     {
       "index": 1,
+      "uid": "media-rendering-workflow-system",
+      "title": "Sistema de Workflow de Renderizado Multimedia",
+      "role": "Ingeniero de Software Full-Stack",
+      "content": "Sistema de workflow de renderizado multimedia basado en monorepo, diseñado para orquestar pipelines asíncronos de generación de video utilizando Remotion y Node.js.\n\nLa plataforma expone endpoints backend que encolan jobs de renderizado en un sistema de colas respaldado por MySQL, donde un proceso worker monitorea continuamente elegibilidad de renders, procesa jobs, rastrea estados del ciclo de vida y gestiona workflows de reintentos y cancelaciones.\n\nEl sistema incluye un dashboard operativo en Next.js para monitorear progreso de renders, revisar jobs en cola y completados, y gestionar operaciones mediante sincronización de estados basada en polling. La infraestructura de renderizado fue diseñada intencionalmente para un entorno operativo integrado localmente como parte de un ecosistema interno más amplio.",
+      "stack": [
+        "TypeScript",
+        "Node.js",
+        "Next.js",
+        "Remotion",
+        "MySQL",
+        "npm Workspaces",
+        "Queue Systems",
+        "Workflow Automation"
+      ],
+      "links": {
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/media-rendering-workflow-system"
+        },
+        "case_study": {
+          "isExternal": false,
+          "url": "/case-study/media-rendering-workflow-system"
+        }
+      },
+      "img": [
+        "/media-rendering-workflow-dashboard.jpeg"
+      ]
+    },
+    {
+      "index": 2,
       "uid": "spa-prototype-jquery",
       "title": "Prototipo SPA con jQuery",
-      "role": "Desarrollador Web",
-      "content": "Prototipo de aplicación de una sola página (SPA) desarrollado con jQuery para demostrar mi comprensión de la arquitectura basada en componentes, organización modular del código y diseño frontend mantenible. La app incluye un flujo básico de autenticación, un diseño tipo panel y enrutamiento del lado del cliente personalizado, depender de frameworks modernos. Este proyecto refleja mi capacidad para aplicar principios arquitectónicos incluso en entornos con tecnologías legacy o con pocas dependencias.",
+      "role": "Ingeniero de Software Full-Stack",
+      "content": "Prototipo arquitectónico SPA desarrollado con jQuery para explorar arquitectura frontend orientada a componentes, estructuras modulares de aplicación y sistemas client-side mantenibles sin depender de frameworks frontend modernos.\n\nEl proyecto incluye routing client-side, flujos de autenticación, módulos UI reutilizables y gestión de estado para dashboards implementados en un entorno de bajas dependencias. Esta exploración refleja mi interés en arquitecturas frontend escalables y adaptabilidad tanto en ecosistemas modernos como legacy.",
       "stack": [
         "jQuery",
         "Webpack",
@@ -43,8 +73,8 @@
         }
       },
       "img": [
-        "/space-turism-desktop.jpeg",
-        "/space-turism-mobile.jpeg"
+        "",
+        ""
       ]
     }
   ]

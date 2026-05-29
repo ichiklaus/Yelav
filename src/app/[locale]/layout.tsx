@@ -10,13 +10,13 @@ import Header from '@components/Header';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Yeraldo Nicolás Moreira | Web Developer',
+  title: 'Yeraldo Nicolás Moreira | Full-Stack Software Engineer',
   description:
-    'Yeraldo Nicolás Moreira is a Web Developer with a degree in Computer Systems Engineering who enjoys creating amazing web products and delivering great user experiences',
+    'Yeraldo Nicolás Moreira is a Full-Stack Software Engineer with a degree in Computer Systems Engineering who enjoys creating amazing web products and delivering great user experiences',
   openGraph: {
-    title: 'Yeraldo Nicolás Moreira | Web Developer',
+    title: 'Yeraldo Nicolás Moreira | Full-Stack Software Engineer',
     description:
-      'Yeraldo Nicolás Moreira is a Web Developer with a degree in Computer Systems Engineering who enjoys creating amazing web products and delivering great user experiences',
+      'Yeraldo Nicolás Moreira is a Full-Stack Software Engineer with a degree in Computer Systems Engineering who enjoys creating amazing web products and delivering great user experiences',
     url: 'https://yelav.me/',
     siteName: 'Yeraldo Nicolás Moreira',
     images: [
@@ -32,9 +32,9 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Yeraldo Nicolás Moreira | Web Developer',
+    title: 'Yeraldo Nicolás Moreira | Full-Stack Software Engineer',
     description:
-      'Yeraldo Nicolás Moreira is a Web Developer with a degree in Computer Systems Engineering who enjoys creating amazing web products and delivering great user experiences',
+      'Yeraldo Nicolás Moreira is a Full-Stack Software Engineer with a degree in Computer Systems Engineering who enjoys creating amazing web products and delivering great user experiences',
     creator: '@ichiklaus', // Optional
     site: '@ichiklaus', // Optional
     images: ['https://yelav.me/og-image.png'], // Same or different from OG image

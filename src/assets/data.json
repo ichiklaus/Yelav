@@ -4,7 +4,7 @@
       "index": 1,
       "uid": "spa-prototype-jquery",
       "title": "SPA Prototype With jQuery",
-      "role": "Web Developer",
+      "role": "Full-Stack Software Engineer",
       "content": "Single Page Application (SPA) prototype built with jQuery to showcase my understanding of component-based architecture, modular code organization, and maintainable frontend design. The app includes a basic authentication flow, dashboard layout, and custom client-side routing—all implemented without modern frameworks. This project demonstrates my ability to apply architectural thinking even in legacy or low-dependency environments.",
       "stack": [
         "jQuery",
@@ -27,8 +27,8 @@
       "index": 2,
       "uid": "yelav-personal-website",
       "title": "Personal Website",
-      "role": "Web Developer",
-      "content": "My personal portfolio website repository. This site showcases selected projects, technologies I’ve worked with, and my experience as a Web Developer.",
+      "role": "Full-Stack Software Engineer",
+      "content": "My personal portfolio website repository. This site showcases selected projects, technologies I’ve worked with, and my experience as a Full-Stack Software Engineer.",
       "stack": [
         "Typescript",
         "React.js",
@@ -142,7 +142,7 @@
         {
           "title": "Overview",
           "name": "overview",
-          "description": "Back in 2022, while at my last semester at university, I initiated the design of a mobile app as my final graduation project. It was meant to help fellow students manage academic tasks more efficiently. The concept aimed to streamline access to key university services such as course schedules, enrollment, academic requests, and notifications. \nAlthough the project was ultimately cancelled and never developed, it served as one of my first full-cycle design experiences — from research and ideation to wireframing and component design in Figma."
+          "description": "Back in 2022, while at my last semester at university, I initiated the design of a mobile app as my final graduation project. It was meant to help fellow students manage academic tasks more efficiently. The concept aimed to streamline access to key university services such as course schedules, enrollment, academic requests, and notifications. \nAlthough the project was ultimately cancelled and never developed, it served as an early exploration of end-to-end product design workflows — from research and ideation to wireframing and component design in Figma."
         },
         {
           "title": "Problem",
@@ -365,7 +365,7 @@
             {
               "1": {
                 "type": "p",
-                "content": "Although this prototype was never built or submitted, it reflects my early passion for problem-solving through design. It helped me develop empathy for users and laid the foundation for how I approach UI/UX in my current projects as a web developer."
+                "content": "Although this prototype was never built or submitted, it reflects my early passion for problem-solving through design. It helped me develop empathy for users and laid the foundation for how I approach UI/UX in my current projects as a Full-Stack Software Engineer."
               }
             }
           ]
@@ -378,7 +378,7 @@
       "key": "acs",
       "company": "AlphaCrew Studio",
       "link": "https://alphacrewstudio.com/",
-      "role": "Web developer",
+      "role": "Full-Stack Software Engineer",
       "period": {
         "start": "2022-07-28",
         "end": ""

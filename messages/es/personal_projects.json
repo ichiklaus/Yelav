@@ -1,16 +1,36 @@
 {
   "personal_projects": [
     {
+      "index": 0,
+      "uid": "utm-app-design",
+      "title": "Exploración de Diseño de Producto para Servicios Estudiantiles",
+      "role": "Diseño de Producto y Exploración UX",
+      "content": "Exploración de diseño de producto enfocada en mejorar el acceso a servicios universitarios estudiantiles mediante una experiencia móvil centralizada. El proyecto incluyó user flows, diseño de interfaces, arquitectura de información y prototipado high-fidelity para workflows de gestión académica.",
+      "stack": [
+        "Figma"
+      ],
+      "links": {
+        "case_study": {
+          "isExternal": false,
+          "url": "/case-study/utm-app-design"
+        }
+      },
+      "img": [
+        "",
+        ""
+      ]
+    },
+    {
       "index": 1,
       "uid": "yelav-personal-website",
-      "title": "Sitio web personal",
-      "role": "Desarrollador Web",
-      "content": "Repositorio de mi portafolio personal. Este sitio presenta algunos de mis proyectos destacados, tecnologías que he utilizado y mi experiencia como desarrollador web.",
+      "title": "Sitio Web Personal",
+      "role": "Diseño de Producto e Ingeniería Frontend",
+      "content": "Plataforma de portafolio personal diseñada para presentar casos de estudio de ingeniería, exploraciones técnicas y proyectos seleccionados orientados a producto. El sitio fue desarrollado con enfoque en layouts responsivos, componentes UI reutilizables, arquitectura de contenido multilenguaje y transiciones interactivas fluidas utilizando React, Next.js y Framer Motion.",
       "stack": [
-        "TypeScript",
+        "Typescript",
         "React.js",
         "Next.js",
-        "TailwindCSS",
+        "Tailwindcss",
         "Framer Motion"
       ],
       "links": {
@@ -24,80 +44,8 @@
         }
       },
       "img": [
-        "/space-turism-desktop.jpeg",
-        "/space-turism-mobile.jpeg"
-      ]
-    },
-    {
-      "index": 3,
-      "uid": "space-tourism-multi-page",
-      "title": "Sitio web multipágina sobre turismo espacial",
-      "role": "Desarrollador Frontend",
-      "content": "Sitio web multipágina desarrollado con react-router y animado con Framer Motion.",
-      "stack": [
-        "React",
-        "React-Router",
-        "Framer Motion",
-        "Netlify"
-      ],
-      "links": {
-        "repo": {
-          "isExternal": true,
-          "url": "https://github.com/ichiklaus/space-tourism-website-main/"
-        },
-        "site": {
-          "isExternal": true,
-          "url": "https://ichiklaus-space-tourism.netlify.app/"
-        }
-      },
-      "img": [
-        "/space-turism-desktop.jpeg",
-        "/space-turism-mobile.jpeg"
-      ]
-    },
-    {
-      "index": 2,
-      "uid": "utm-app-design",
-      "title": "Proyecto conceptual archivado",
-      "role": "Diseño visual",
-      "content": "Prototipo de aplicación móvil para integrar los servicios estudiantiles en línea de la Universidad Técnica de Manabí.",
-      "stack": [
-        "Figma"
-      ],
-      "links": {
-        "case_study": {
-          "isExternal": false,
-          "url": "/case-study/utm-app-design"
-        }
-      },
-      "img": [
-        "/space-turism-desktop.jpeg",
-        "/space-turism-mobile.jpeg"
-      ]
-    },
-    {
-      "index": 4,
-      "uid": "clipboard-landing-page",
-      "title": "Landing page de Clipboard",
-      "role": "Desarrollador Frontend",
-      "content": "Landing page sencilla para un producto digital, desarrollada con HTML semántico y CSS.",
-      "stack": [
-        "HTML5",
-        "CSS3",
-        "GitHub Pages"
-      ],
-      "links": {
-        "repo": {
-          "isExternal": true,
-          "url": "https://github.com/ichiklaus/fem-clipboard/"
-        },
-        "site": {
-          "isExternal": true,
-          "url": "https://ichiklaus.github.io/fem-clipboard/"
-        }
-      },
-      "img": [
-        "/clipboard-landing.png"
+        "",
+        ""
       ]
     }
   ]

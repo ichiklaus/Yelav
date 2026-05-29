@@ -1,0 +1,56 @@
+{
+  "archived_projects": [
+    {
+      "index": 2,
+      "uid": "space-tourism-multi-page",
+      "title": "Space tourism multi-page website",
+      "role": "Frontend Developer",
+      "content": "This is a multi-page website built with react-router and animated with Framer Motion.",
+      "stack": [
+        "React",
+        "React-Router",
+        "Framer Motion",
+        "Netlify"
+      ],
+      "links": {
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/space-tourism-website-main/"
+        },
+        "site": {
+          "isExternal": true,
+          "url": "https://ichiklaus-space-tourism.netlify.app/"
+        }
+      },
+      "img": [
+        "/space-turism-desktop.jpeg",
+        "/space-turism-mobile.jpeg"
+      ]
+    },
+    {
+      "index": 3,
+      "uid": "clipboard-landing-page",
+      "title": "Clipboard Landing Page",
+      "role": "Frontend Developer",
+      "content": "A simple landing page for a fictional digital product built with semantic HTML and custom CSS.",
+      "stack": [
+        "HTML5",
+        "CSS3",
+        "GitHub Pages"
+      ],
+      "links": {
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/fem-clipboard/"
+        },
+        "site": {
+          "isExternal": true,
+          "url": "https://ichiklaus.github.io/fem-clipboard/"
+        }
+      },
+      "img": [
+        "/clipboard-landing.png"
+      ]
+    }
+  ]
+}

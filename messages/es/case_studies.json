@@ -250,33 +250,34 @@
     {
       "index": 2,
       "uid": "real-time-trivia-system",
-      "project_title": "Plataforma de Trivia Interactiva en Tiempo Real para Streaming Deportivo",
+      "project_title": "Plataforma interactiva de trivia en tiempo real para streaming deportivo",
       "ref": "real-time-trivia-system",
       "role": [
-        "Desarrollo Full-Stack",
-        "Arquitectura del Sistema",
-        "Prototipado de Producto"
+        "Ingeniería Full-Stack",
+        "Diseño de Sistemas",
+        "Desarrollo de Plataformas en Tiempo Real"
       ],
       "stack": [
         "React",
         "TypeScript",
         "Node.js",
-        "Remotion",
         "WebSockets",
-        "Firebase"
+        "Firebase",
+        "Remotion",
+        "Sistemas en Tiempo Real",
+        "Arquitectura Orientada a Eventos"
       ],
-      "project_type": "Sistema en Producción (Proyecto para cliente bajo NDA)",
-      "duration": "~6 meses",
+      "project_type": "Sistema en Producción (Proyecto de cliente bajo NDA)",
       "content": [
         {
-          "title": "Overview",
+          "title": "Resumen",
           "name": "overview",
-          "description": "Este proyecto consistió en diseñar y desarrollar un sistema de trivia interactiva en tiempo real para un entorno de streaming deportivo. La idea era crear una experiencia de segunda pantalla donde los espectadores pudieran participar en juegos de trivia mientras veían la transmisión.\n\nLa plataforma está compuesta por dos elementos principales: un motor de generación de video que produce los segmentos de trivia utilizados en la transmisión y una aplicación web móvil donde los usuarios participan en sesiones sincronizadas de trivia. El sistema se integra con la plataforma de streaming mediante WebSockets para coordinar gameplay, rankings y sesiones de jugadores en tiempo real."
+          "description": "Este proyecto consistió en el diseño y desarrollo de un sistema interactivo de trivia en tiempo real para un entorno de streaming deportivo. El objetivo era crear una experiencia second-screen atractiva donde los espectadores pudieran participar en juegos de trivia mientras observaban una transmisión en vivo.\n\nLa plataforma está compuesta por dos componentes principales: un motor de renderizado de video que genera segmentos de trivia para la transmisión y una aplicación web mobile-first donde los usuarios participan en sesiones sincronizadas de trivia. El sistema se integra con la plataforma de streaming utilizando WebSockets para coordinar partidas, leaderboards y sesiones de jugadores en tiempo real."
         },
         {
-          "title": "Problem",
+          "title": "Problema",
           "name": "problem_overview",
-          "description": "Las plataformas de streaming deportivo suelen tener dificultades para mantener la atención del público durante los descansos entre eventos en vivo. Aunque la publicidad ocupa parte de ese espacio, rara vez genera interacción real con la audiencia.\n\nEl objetivo de este proyecto fue explorar cómo transformar a los espectadores pasivos en participantes activos mediante un sistema de trivia sincronizado con la transmisión."
+          "description": "Las plataformas de streaming deportivo suelen enfrentar dificultades para mantener el engagement de los espectadores durante las pausas de eventos en vivo. La publicidad tradicional cubre parte de ese espacio, pero rara vez genera interacción significativa.\n\nEl objetivo de este proyecto fue diseñar un sistema capaz de transformar espectadores pasivos en participantes activos, permitiéndoles jugar trivia sincronizada mientras observaban la transmisión."
         }
       ],
       "dynamic_content": [
@@ -287,95 +288,323 @@
             {
               "1": {
                 "type": "p",
-                "content": "La plataforma se diseñó como un sistema distribuido en tiempo real compuesto por tres elementos principales:"
+                "content": "La plataforma fue diseñada como un sistema distribuido en tiempo real que conecta tres componentes principales:"
               },
               "2": {
                 "type": "ul",
                 "content": [
-                  "Un motor de generación de video para producir los segmentos de trivia",
-                  "Un backend encargado de gestionar el estado del juego y la sincronización",
-                  "Una aplicación web móvil donde los usuarios participan en la trivia"
+                  "Un motor de renderizado de video que genera segmentos de trivia",
+                  "Un servicio backend responsable del estado del juego y la sincronización",
+                  "Una aplicación web mobile-first diseñada para participación second-screen sincronizada durante transmisiones deportivas en vivo"
                 ]
               },
               "3": {
                 "type": "p",
-                "content": "El backend se integra con la plataforma de streaming mediante WebSockets, permitiendo que la transmisión y la aplicación móvil permanezcan sincronizadas durante las sesiones de juego."
+                "content": "El backend se integra con la plataforma de streaming mediante WebSockets, permitiendo que la transmisión y la aplicación móvil permanezcan sincronizadas durante las partidas."
               }
             }
           ],
           "image_urls": []
         },
         {
-          "title": "Sincronización del Juego",
+          "title": "Restricciones de Ingeniería",
+          "name": "constraints",
+          "description": [
+            {
+              "1": {
+                "type": "ul",
+                "content": [
+                  "Mantener sincronización entre la transmisión y los dispositivos de los jugadores con mínima latencia",
+                  "Gestionar participación concurrente de jugadores durante sesiones de trivia en vivo",
+                  "Garantizar reconexión confiable de WebSockets bajo condiciones inestables de red móvil",
+                  "Coordinar generación dinámica de contenido de trivia con restricciones de tiempo de transmisión",
+                  "Diseñar flujos frontend optimizados para interacción móvil second-screen durante eventos en vivo"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Flujo de Sincronización del Juego",
           "name": "game_flow",
           "description": [
             {
               "1": {
                 "type": "p",
-                "content": "Las sesiones de trivia se sincronizan entre la transmisión y la aplicación móvil mediante eventos enviados por WebSockets."
+                "content": "Las sesiones de trivia se sincronizan entre la transmisión y la aplicación móvil utilizando WebSockets."
               },
               "2": {
                 "type": "p",
-                "content": "Cuando comienza un segmento de trivia en la transmisión, el backend envía eventos en tiempo real a los jugadores conectados para iniciar la sesión de juego en sus dispositivos."
+                "content": "Cuando un segmento de trivia inicia en la transmisión, el backend envía eventos en tiempo real a los jugadores conectados, activando el inicio de la sesión de juego en sus dispositivos."
               }
             }
           ],
           "image_urls": []
         },
         {
-          "title": "Motor de Generación de Video",
+          "title": "Motor de Renderizado de Video",
           "name": "render_engine",
           "description": [
             {
               "1": {
                 "type": "p",
-                "content": "Uno de los componentes clave del sistema es el motor de generación de video construido con Remotion. Este motor permite generar dinámicamente los segmentos de trivia utilizados durante la transmisión."
+                "content": "Uno de los componentes clave del sistema es el motor de renderizado de video desarrollado con Remotion. Este motor genera dinámicamente los videos de trivia utilizados durante los segmentos de transmisión."
               },
               "2": {
                 "type": "p",
-                "content": "Preguntas, datos curiosos y citas pueden renderizarse programáticamente en videos, lo que permite generar nuevo contenido de trivia de forma flexible."
+                "content": "Contenido como preguntas, datos curiosos y citas puede renderizarse programáticamente en segmentos de video, permitiendo a la plataforma generar nuevo contenido de trivia de manera rápida."
               }
             }
           ],
           "image_urls": []
         },
         {
-          "title": "Experiencia de Juego en la App",
+          "title": "Experiencia de Juego en Móvil",
           "name": "mobile_app",
-          "description": "La aplicación web móvil permite a los usuarios participar en sesiones de trivia sincronizadas con la transmisión. Los jugadores responden preguntas en tiempo real y compiten en rankings durante el juego.",
+          "description": "La aplicación web móvil permite a los usuarios participar en sesiones de trivia sincronizadas con la transmisión. Los jugadores responden preguntas en tiempo real y compiten en leaderboards durante la partida.",
           "steps": [
             {
-              "title": "Lobby del Juego",
+              "title": "Game Lobby",
               "showFinalVersion": true,
-              "description": "Los jugadores ingresan a la sesión de trivia y esperan el inicio de la siguiente pregunta.",
+              "description": "Los jugadores se unen a la sesión de trivia y esperan a que la transmisión inicie la siguiente pregunta.",
               "image_urls": []
             },
             {
-              "title": "Pregunta de Trivia",
+              "title": "Trivia Question",
               "showFinalVersion": true,
-              "description": "Los jugadores responden preguntas de opción múltiple sincronizadas con la transmisión.",
+              "description": "Los jugadores responden preguntas de trivia de opción múltiple sincronizadas con la transmisión.",
               "image_urls": []
             },
             {
-              "title": "Ranking",
+              "title": "Leaderboard",
               "showFinalVersion": true,
-              "description": "Tabla de posiciones en tiempo real basada en puntaje y velocidad de respuesta.",
+              "description": "Leaderboard en tiempo real que muestra a los mejores jugadores según puntaje y tiempo de respuesta.",
+              "image_urls": []
+            },
+            {
+              "title": "Player History",
+              "showFinalVersion": true,
+              "description": "Los jugadores pueden revisar sesiones anteriores de trivia y su rendimiento a lo largo del tiempo.",
               "image_urls": []
             }
           ]
         },
         {
-          "title": "Conclusiones",
+          "title": "Desafíos Técnicos",
+          "name": "technical_challenges",
+          "description": [
+            {
+              "1": {
+                "type": "ul",
+                "content": [
+                  "Sincronizar el gameplay de trivia con una transmisión en vivo",
+                  "Gestionar sesiones de jugadores y leaderboards en tiempo real",
+                  "Diseñar una capa de comunicación WebSocket escalable",
+                  "Generar contenido dinámico de video mediante un motor de renderizado",
+                  "Garantizar que la experiencia web móvil funcionara de manera confiable durante sesiones en vivo"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Reflexión",
           "name": "reflection",
           "description": [
             {
               "1": {
                 "type": "p",
-                "content": "Este proyecto representó una experiencia importante al trabajar con sistemas interactivos en tiempo real dentro de un entorno de producción."
+                "content": "Este proyecto representó una gran oportunidad para diseñar e implementar un sistema interactivo a escala de producción. Requirió combinar desarrollo frontend, servicios backend, comunicación en tiempo real y flujos de generación de contenido multimedia."
               },
               "2": {
                 "type": "p",
-                "content": "Me permitió profundizar en arquitecturas basadas en WebSockets, sincronización de eventos en vivo y desarrollo de experiencias interactivas conectadas a transmisiones en streaming."
+                "content": "Trabajar en este sistema fortaleció mi experiencia en arquitecturas en tiempo real y diseño de productos interactivos, especialmente en entornos donde múltiples sistemas deben permanecer sincronizados."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "uid": "media-rendering-workflow-system",
+      "project_title": "Sistema de workflow de renderizado multimedia para orquestar pipelines asíncronos de generación de video.",
+      "ref": "media-rendering-workflow-system",
+      "role": [
+        "Ingeniería Full-Stack",
+        "Automatización de Workflows",
+        "Arquitectura de Pipelines de Renderizado"
+      ],
+      "stack": [
+        "TypeScript",
+        "Node.js",
+        "Next.js",
+        "Remotion",
+        "MySQL",
+        "npm Workspaces",
+        "Sistemas de Colas",
+        "Automatización de Workflows"
+      ],
+      "project_type": "Plataforma Interna de Renderizado Multimedia",
+      "duration": "Proyecto Interno en Desarrollo",
+      "content": [
+        {
+          "title": "Resumen",
+          "name": "overview",
+          "description": "Este proyecto es un sistema de workflow de renderizado multimedia diseñado para automatizar la generación asíncrona de video utilizando Remotion y Node.js. La plataforma fue desarrollada como parte de un ecosistema interno más amplio y se enfoca en orquestar jobs de renderizado, gestionar estados del ciclo de vida de renders y proporcionar visibilidad operativa mediante un dashboard ligero.\n\nEl sistema expone endpoints backend que encolan jobs de renderizado en un workflow basado en colas persistentes con MySQL, donde un proceso worker monitorea continuamente jobs pendientes, evalúa elegibilidad de renderizado, procesa renders y gestiona flujos de reintentos y cancelaciones."
+        },
+        {
+          "title": "Problema",
+          "name": "problem_overview",
+          "description": "La plataforma surgió de la necesidad de automatizar la generación de assets de video personalizados orientados a marketing, manteniendo al mismo tiempo control operativo sobre los workflows de renderizado.\n\nEn lugar de procesar renders de manera síncrona durante interacciones de usuario, el sistema requería un workflow backend capaz de encolar solicitudes de renderizado, procesarlas de forma asíncrona, rastrear estados de render, manejar fallos y exponer visibilidad operativa mediante APIs y herramientas de dashboard."
+        }
+      ],
+      "dynamic_content": [
+        {
+          "title": "Arquitectura del Sistema",
+          "name": "system_architecture",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "La aplicación fue estructurada como un sistema basado en monorepo compuesto por múltiples aplicaciones y paquetes compartidos."
+              },
+              "2": {
+                "type": "ul",
+                "content": [
+                  "Backend en Express.js exponiendo endpoints operativos y de renderizado",
+                  "Workflow de cola persistente respaldado por MySQL",
+                  "Proceso worker loop responsable de evaluar y procesar jobs de renderizado",
+                  "Motor de renderizado basado en Remotion para generar composiciones dinámicas de video",
+                  "Dashboard operativo en Next.js utilizado para monitorear estados de render y gestionar operaciones",
+                  "Paquetes compartidos organizados mediante npm workspaces"
+                ]
+              },
+              "3": {
+                "type": "p",
+                "content": "La infraestructura de renderizado fue diseñada intencionalmente para operar dentro de un entorno operativo integrado localmente, en lugar de una arquitectura cloud distribuida."
+              }
+            }
+          ],
+          "image_urls": []
+        },
+        {
+          "title": "Workflow de Cola",
+          "name": "queue_workflow",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "Las solicitudes de renderizado se inician mediante endpoints backend que crean entradas persistentes en cola dentro de MySQL."
+              },
+              "2": {
+                "type": "p",
+                "content": "Un worker loop consulta continuamente la base de datos en busca de jobs elegibles y los transiciona a través de distintos estados de ciclo de vida durante el procesamiento."
+              },
+              "3": {
+                "type": "ul",
+                "content": [
+                  "Creación de renders en cola",
+                  "Polling del worker y evaluación de elegibilidad",
+                  "Procesamiento de renders",
+                  "Seguimiento de progreso",
+                  "Finalización y persistencia de outputs",
+                  "Manejo de reintentos",
+                  "Workflows de cancelación manual"
+                ]
+              }
+            }
+          ],
+          "image_urls": []
+        },
+        {
+          "title": "Dashboard Operativo",
+          "name": "dashboard",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "El sistema incluye un dashboard operativo ligero desarrollado con Next.js para monitorear jobs de renderizado y revisar estados del ciclo de vida de renders."
+              },
+              "2": {
+                "type": "p",
+                "content": "La sincronización del dashboard fue implementada mediante polling periódico contra endpoints backend de estado de render, permitiendo visibilidad operativa sin introducir complejidad adicional de infraestructura en tiempo real."
+              },
+              "3": {
+                "type": "ul",
+                "content": [
+                  "Monitoreo de renders en cola",
+                  "Seguimiento de progreso de renders",
+                  "Visibilidad de renders fallidos",
+                  "Gestión de reintentos",
+                  "Operaciones de cancelación manual",
+                  "Revisión de renders completados"
+                ]
+              }
+            }
+          ],
+          "image_urls": [
+            {
+              "alt": "",
+              "url": "/case-study/media-rendering-workflow-system/dashboard.png"
+            }
+          ]
+        },
+        {
+          "title": "Gestión del Ciclo de Vida de Renderizado",
+          "name": "render_lifecycle",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "El workflow de renderizado persistía metadata operativa y estados del ciclo de vida directamente en MySQL para proporcionar visibilidad y confiabilidad a través de operaciones de procesamiento asíncrono."
+              },
+              "2": {
+                "type": "ul",
+                "content": [
+                  "Persistencia de estados de render",
+                  "Seguimiento de intentos de reintento",
+                  "Persistencia de progreso",
+                  "Gestión de estados de cancelación",
+                  "Referencias de outputs y thumbnails",
+                  "Timestamps operativos",
+                  "Logging de errores"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Desafíos de Ingeniería",
+          "name": "engineering_challenges",
+          "description": [
+            {
+              "1": {
+                "type": "ul",
+                "content": [
+                  "Diseñar un workflow de renderizado asíncrono sin bloquear operaciones API",
+                  "Persistir estados del ciclo de vida de la cola de manera confiable en la base de datos",
+                  "Gestionar workflows de reintentos y cancelaciones para renders fallidos",
+                  "Coordinar polling de workers y evaluación de elegibilidad de renders",
+                  "Estructurar la plataforma como una arquitectura monorepo mantenible",
+                  "Proporcionar visibilidad operativa sobre workflows de procesamiento de renders"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Reflexión",
+          "name": "reflection",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "Este proyecto se convirtió en una valiosa exploración de orquestación de workflows asíncronos, gestión de ciclo de vida de renders y diseño de herramientas operativas."
+              },
+              "2": {
+                "type": "p",
+                "content": "Trabajar en la plataforma profundizó mi entendimiento sobre workflows de automatización backend, coordinación de colas persistentes, organización de aplicaciones monorepo y los tradeoffs de ingeniería involucrados en infraestructura de renderizado multimedia."
               }
             }
           ]

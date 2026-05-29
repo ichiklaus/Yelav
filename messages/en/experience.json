@@ -4,7 +4,7 @@
       "key": "acs",
       "company": "AlphaCrew Studio",
       "link": "https://alphacrewstudio.com/",
-      "role": "Web developer",
+      "role": "Full-Stack Software Engineer",
       "period": {
         "start": "2022-07-28",
         "end": "Present"
@@ -24,8 +24,8 @@
         "Customized WordPress frontend solutions, adapting designs and interactions using themes, page builders, and plugins to meet client needs."
       ],
       "tasks": [
-        "Built a real-time interactive trivia platform for a sports streaming environment, including a Remotion-based video rendering engine and a synchronized mobile web app where viewers participate in live quizzes.",
-        "Developed backend services integrating with the streaming platform through WebSockets to synchronize gameplay, leaderboards, and player sessions.",
+        "Designed and implemented a real-time interactive trivia platform for a sports streaming environment, including a Remotion-based rendering pipeline and a synchronized mobile web application where viewers participate in live trivia sessions.",
+        "Designed backend services integrating with the streaming platform through WebSockets to coordinate real-time gameplay synchronization, leaderboards, and player session management.",
         "Led development of dashboard modules for a video marketing platform including analytics, notifications, order management, and contacts.",
         "Designed internal business systems such as applicant management, scheduling tools, payroll utilities, and employee time tracking."
       ],
@@ -36,7 +36,6 @@
         "Websockets",
         "Node.js",
         "Remotion",
-        "Wordpress",
         "jQuery"
       ]
     }

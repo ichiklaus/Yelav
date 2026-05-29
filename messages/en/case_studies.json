@@ -6,10 +6,16 @@
       "project_title": "App prototype for integrating online student services at Universidad Técnica de Manabí.",
       "ref": "utm-app-design",
       "role": [
-        "Visual Design"
+        "Product Design",
+        "UX Exploration",
+        "Interface Prototyping"
       ],
       "stack": [
-        "Figma"
+        "Figma",
+        "Wireframing",
+        "User Flows",
+        "Information Architecture",
+        "UI/UX Design"
       ],
       "project_type": "University App Concept (Unsubmitted)",
       "duration": "~3 months",
@@ -17,7 +23,7 @@
         {
           "title": "Overview",
           "name": "overview",
-          "description": "Back in 2022, while at my last semester at university, I initiated the design of a mobile app as my final graduation project. It was meant to help fellow students manage academic tasks more efficiently. The concept aimed to streamline access to key university services such as course schedules, enrollment, academic requests, and notifications. \nAlthough the project was ultimately cancelled and never developed, it served as one of my first full-cycle design experiences — from research and ideation to wireframing and component design in Figma."
+          "description": "Back in 2022, while at my last semester at university, I initiated the design of a mobile app as my final graduation project. It was meant to help fellow students manage academic tasks more efficiently. The concept aimed to streamline access to key university services such as course schedules, enrollment, academic requests, and notifications. \nAlthough the concept was never taken into development, the project became an important early exploration of user-centered product design, information architecture, and mobile interaction workflows."
         },
         {
           "title": "Problem",
@@ -240,7 +246,7 @@
             {
               "1": {
                 "type": "p",
-                "content": "Although this prototype was never built or submitted, it reflects my early passion for problem-solving through design. It helped me develop empathy for users and laid the foundation for how I approach UI/UX in my current projects as a web developer."
+                "content": "Although this prototype was never built or submitted, it reflects my early passion for problem-solving through design. It helped me develop empathy for users and laid the foundation for how I approach UI/UX in my current projects as a Full-Stack Software Engineer."
               }
             }
           ]
@@ -253,20 +259,21 @@
       "project_title": "Real-Time Interactive Trivia Platform for Sports Streaming",
       "ref": "real-time-trivia-system",
       "role": [
-        "Full-Stack Development",
-        "System Architecture",
-        "Product Prototyping"
+        "Full-Stack Software Engineering",
+        "System Design",
+        "Real-Time Platform Development"
       ],
       "stack": [
         "React",
         "TypeScript",
         "Node.js",
-        "Remotion",
         "WebSockets",
-        "Firebase"
+        "Firebase",
+        "Remotion",
+        "Real-Time Systems",
+        "Event-Driven Architecture"
       ],
       "project_type": "Production System (Client Project under NDA)",
-      "duration": "~6 months",
       "content": [
         {
           "title": "Overview",
@@ -294,7 +301,7 @@
                 "content": [
                   "A video rendering engine that generates trivia segments",
                   "A backend service responsible for game state and synchronization",
-                  "A mobile web application where users play trivia in real time"
+                  "A mobile-first web application designed for synchronized second-screen participation during live sports broadcasts"
                 ]
               },
               "3": {
@@ -304,6 +311,24 @@
             }
           ],
           "image_urls": []
+        },
+        {
+          "title": "Engineering Constraints",
+          "name": "constraints",
+          "description": [
+            {
+              "1": {
+                "type": "ul",
+                "content": [
+                  "Maintaining synchronization between the broadcast and player devices with minimal latency",
+                  "Handling concurrent player participation during live trivia sessions",
+                  "Ensuring reliable WebSocket reconnection behavior during unstable mobile network conditions",
+                  "Coordinating dynamic trivia content generation with broadcast timing constraints",
+                  "Designing frontend flows optimized for second-screen mobile interaction during live events"
+                ]
+              }
+            }
+          ]
         },
         {
           "title": "Game Synchronization Flow",
@@ -400,6 +425,192 @@
               "2": {
                 "type": "p",
                 "content": "Working on this system strengthened my experience with real-time architectures and interactive product design, particularly in environments where multiple systems must remain synchronized."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "uid": "media-rendering-workflow-system",
+      "project_title": "Media rendering workflow system for orchestrating asynchronous video generation pipelines.",
+      "ref": "media-rendering-workflow-system",
+      "role": [
+        "Full-Stack Software Engineering",
+        "Workflow Automation",
+        "Render Pipeline Architecture"
+      ],
+      "stack": [
+        "TypeScript",
+        "Node.js",
+        "Next.js",
+        "Remotion",
+        "MySQL",
+        "npm Workspaces",
+        "Queue Systems",
+        "Workflow Automation"
+      ],
+      "project_type": "Internal Media Rendering Platform",
+      "duration": "Ongoing Internal Project",
+      "content": [
+        {
+          "title": "Overview",
+          "name": "overview",
+          "description": "This project is a media rendering workflow system designed to automate asynchronous video generation using Remotion and Node.js. The platform was built as part of a larger internal ecosystem and focuses on orchestrating render jobs, managing render lifecycle states, and providing operational visibility through a lightweight dashboard.\n\nThe system exposes backend endpoints that enqueue rendering jobs into a MySQL-backed queue workflow, where a worker process continuously monitors pending jobs, evaluates render eligibility, processes renders, and manages retry and cancellation flows."
+        },
+        {
+          "title": "Problem",
+          "name": "problem_overview",
+          "description": "The platform originated from the need to automate the generation of customized marketing-oriented video assets while maintaining operational control over rendering workflows.\n\nInstead of processing renders synchronously during user interactions, the system required a backend workflow capable of queuing render requests, processing them asynchronously, tracking render states, handling failures, and exposing operational visibility through APIs and dashboard tooling."
+        }
+      ],
+      "dynamic_content": [
+        {
+          "title": "System Architecture",
+          "name": "system_architecture",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "The application was structured as a monorepo-based system composed of multiple applications and shared packages."
+              },
+              "2": {
+                "type": "ul",
+                "content": [
+                  "Express.js backend exposing rendering and operational endpoints",
+                  "MySQL-backed persistent queue workflow",
+                  "Worker loop process responsible for evaluating and processing render jobs",
+                  "Remotion-based rendering engine for generating dynamic video compositions",
+                  "Next.js operational dashboard used to monitor render status and manage render operations",
+                  "Shared packages organized through npm workspaces"
+                ]
+              },
+              "3": {
+                "type": "p",
+                "content": "The rendering infrastructure was intentionally designed to operate within a locally integrated operational environment rather than a distributed cloud architecture."
+              }
+            }
+          ],
+          "image_urls": []
+        },
+        {
+          "title": "Queue Workflow",
+          "name": "queue_workflow",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "Render requests are initiated through backend endpoints that create persistent queue entries within MySQL."
+              },
+              "2": {
+                "type": "p",
+                "content": "A worker loop continuously polls the database for eligible render jobs and transitions them through different lifecycle states during processing."
+              },
+              "3": {
+                "type": "ul",
+                "content": [
+                  "Queued render creation",
+                  "Worker polling and eligibility evaluation",
+                  "Render processing",
+                  "Progress tracking",
+                  "Completion and output persistence",
+                  "Retry handling",
+                  "Manual cancellation workflows"
+                ]
+              }
+            }
+          ],
+          "image_urls": []
+        },
+        {
+          "title": "Operational Dashboard",
+          "name": "dashboard",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "The system includes a lightweight operational dashboard built with Next.js for monitoring render jobs and reviewing render lifecycle states."
+              },
+              "2": {
+                "type": "p",
+                "content": "Dashboard synchronization was implemented through periodic polling against backend render status endpoints, allowing operational visibility without introducing additional real-time infrastructure complexity."
+              },
+              "3": {
+                "type": "ul",
+                "content": [
+                  "Queued render monitoring",
+                  "Render progress tracking",
+                  "Failed render visibility",
+                  "Retry management",
+                  "Manual cancellation operations",
+                  "Completed render review"
+                ]
+              }
+            }
+          ],
+          "image_urls": [
+            {
+              "alt": "",
+              "url": "/case-study/media-rendering-workflow-system/dashboard.png"
+            }
+          ]
+        },
+        {
+          "title": "Render Lifecycle Management",
+          "name": "render_lifecycle",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "The render workflow persisted operational metadata and lifecycle state directly within MySQL to provide visibility and reliability across asynchronous processing operations."
+              },
+              "2": {
+                "type": "ul",
+                "content": [
+                  "Render status persistence",
+                  "Retry attempt tracking",
+                  "Progress persistence",
+                  "Cancellation state management",
+                  "Output and thumbnail references",
+                  "Operational timestamps",
+                  "Failure logging"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Engineering Challenges",
+          "name": "engineering_challenges",
+          "description": [
+            {
+              "1": {
+                "type": "ul",
+                "content": [
+                  "Designing an asynchronous rendering workflow without blocking API operations",
+                  "Persisting queue lifecycle states reliably within the database",
+                  "Managing retry and cancellation workflows for failed render jobs",
+                  "Coordinating worker polling and render eligibility evaluation",
+                  "Structuring the platform as a maintainable monorepo architecture",
+                  "Providing operational visibility into render processing workflows"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "title": "Reflection",
+          "name": "reflection",
+          "description": [
+            {
+              "1": {
+                "type": "p",
+                "content": "This project became a valuable exploration of asynchronous workflow orchestration, render lifecycle management, and operational tooling design."
+              },
+              "2": {
+                "type": "p",
+                "content": "Working on the platform deepened my understanding of backend automation workflows, persistent queue coordination, monorepo application organization, and the practical engineering tradeoffs involved in media rendering infrastructure."
               }
             }
           ]

@@ -4,35 +4,29 @@
       "key": "acs",
       "company": "AlphaCrew Studio",
       "link": "https://alphacrewstudio.com/",
-      "role": "Desarrollador Web",
+      "role": "Ingeniero de Software Full-Stack",
       "period": {
         "start": "2022-07-28",
         "end": "Actualidad"
       },
       "tasks": [
-        "Desarrollé una aplicación para generar videos utilizando un motor de renderizado externo, con integración dinámica de locuciones y soporte para renderizado masivo.",
-        "Construí módulos completos para un panel administrativo en una plataforma de Video Marketing, incluyendo analíticas, notificaciones y gestión de pedidos y contactos.",
-        "Lideré el desarrollo de módulos de gestión empresarial como seguimiento de candidatos, nómina y sistemas de programación.",
-        "Automatizé tareas operativas utilizando Google Cloud Scheduler y flujos de trabajo por correo electrónico.",
-        "Implementé funcionalidades dinámicas e interfaces personalizadas.",
-        "Optimizé el rendimiento del frontend y la compatibilidad entre navegadores.",
-        "Personalicé soluciones frontend en WordPress, adaptando diseños e interacciones según los requerimientos del cliente."
+        "Diseñé e implementé una plataforma interactiva de trivia en tiempo real para un entorno de streaming deportivo, incluyendo un pipeline de renderizado basado en Remotion y una aplicación web móvil sincronizada donde los espectadores participan en sesiones de trivia en vivo.",
+        "Diseñé servicios backend integrados con la plataforma de streaming mediante WebSockets para coordinar sincronización de gameplay en tiempo real, leaderboards y gestión de sesiones de jugadores.",
+        "Lideré el desarrollo de módulos dashboard para una plataforma de video marketing, incluyendo analíticas, notificaciones, gestión de órdenes y contactos.",
+        "Diseñé sistemas internos de negocio como gestión de candidatos, herramientas de scheduling, utilidades de nómina y control de asistencia de empleados.",
+        "Desarrollé funcionalidades full-stack para plataformas web, construyendo interfaces responsivas y servicios backend escalables.",
+        "Automaticé tareas operativas mediante workflows de correo electrónico y procesos programados.",
+        "Desarrollé sitios web utilizando soluciones CMS como WordPress y sitios personalizados adaptados a necesidades específicas de clientes.",
+        "Implementé diseños responsivos para garantizar compatibilidad cross-browser y mejorar la experiencia de usuario."
       ],
       "tags": [
-        "WordPress",
-        "jQuery",
-        "JavaScript",
-        "HTML y CSS",
-        "Parcel.js",
-        "Vite",
-        "React",
-        "Next.js",
-        "TypeScript",
-        "Webpack",
         "Firebase",
+        "Typescript",
+        "React",
+        "Websockets",
         "Node.js",
-        "Express.js",
-        "EJS"
+        "Remotion",
+        "jQuery"
       ]
     }
   ]

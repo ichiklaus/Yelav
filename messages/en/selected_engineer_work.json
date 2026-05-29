@@ -4,8 +4,8 @@
       "index": 0,
       "uid": "real-time-trivia-system",
       "title": "Real-Time Interactive Trivia System for Streaming",
-      "role": "Web Developer",
-      "content": "A production system designed to synchronize interactive trivia games with a live sports broadcast. The platform includes a video rendering engine built with Remotion that generates dynamic trivia content and a mobile web app where viewers participate in live quizzes during broadcast breaks. The backend integrates with the streaming platform through WebSockets to coordinate game sessions, leaderboards, and player activity in real time.",
+      "role": "Full-Stack Software Engineer",
+      "content": "A production-scale real-time interactive system designed for synchronized second-screen participation during live sports broadcasts.\n\nThe platform combines a Remotion-based rendering pipeline that dynamically generates trivia video segments with a mobile-first web application where viewers participate in synchronized live quiz sessions.\n\nThe backend integrates with the streaming environment through WebSockets to coordinate game state synchronization, player sessions, leaderboards, and real-time gameplay interactions across the broadcast and connected devices.",
       "stack": [
         "React",
         "Node.js",
@@ -26,10 +26,40 @@
     },
     {
       "index": 1,
+      "uid": "media-rendering-workflow-system",
+      "title": "Media Rendering Workflow System",
+      "role": "Full-Stack Software Engineer",
+      "content": "A monorepo-based media rendering workflow system designed to orchestrate asynchronous video generation pipelines using Remotion and Node.js.\n\nThe platform exposes backend endpoints that enqueue rendering jobs into a MySQL-backed queue system, where a worker process continuously monitors render eligibility, processes jobs, tracks lifecycle states, and manages retry and cancellation workflows.\n\nThe system includes a Next.js operational dashboard for monitoring render progress, reviewing queued and completed jobs, and managing render operations through polling-based status synchronization. The rendering infrastructure was intentionally designed for a locally integrated operational environment as part of a larger internal platform ecosystem.",
+      "stack": [
+        "TypeScript",
+        "Node.js",
+        "Next.js",
+        "Remotion",
+        "MySQL",
+        "npm Workspaces",
+        "Queue Systems",
+        "Workflow Automation"
+      ],
+      "links": {
+        "repo": {
+          "isExternal": true,
+          "url": "https://github.com/ichiklaus/media-rendering-workflow-system"
+        },
+        "case_study": {
+          "isExternal": false,
+          "url": "/case-study/media-rendering-workflow-system"
+        }
+      },
+      "img": [
+        "/media-rendering-workflow-dashboard.jpeg"
+      ]
+    },
+    {
+      "index": 2,
       "uid": "spa-prototype-jquery",
       "title": "SPA Prototype With jQuery",
-      "role": "Web Developer",
-      "content": "Single Page Application (SPA) prototype built with jQuery to showcase my understanding of component-based architecture, modular code organization, and maintainable frontend design. The app includes a basic authentication flow, dashboard layout, and custom client-side routing—all implemented without modern frameworks. This project demonstrates my ability to apply architectural thinking even in legacy or low-dependency environments.",
+      "role": "Full-Stack Software Engineer",
+      "content": "Architectural SPA prototype built with jQuery to explore component-driven frontend architecture, modular application structure, and maintainable client-side systems without relying on modern frontend frameworks.\n\nThe project includes client-side routing, authentication flows, reusable UI modules, and dashboard state management implemented in a low-dependency environment. This exploration reflects my interest in scalable frontend architecture and adaptability across both modern and legacy ecosystems.",
       "stack": [
         "jQuery",
         "Webpack",
@@ -43,8 +73,8 @@
         }
       },
       "img": [
-        "/space-turism-desktop.jpeg",
-        "/space-turism-mobile.jpeg"
+        "",
+        ""
       ]
     }
   ]

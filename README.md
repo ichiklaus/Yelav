@@ -1,10 +1,10 @@
 # Yeraldo Moreira - Portfolio Website
 
-Welcome to my personal portfolio website repository. This site showcases selected projects, technologies I’ve worked with, and my experience as a Web Developer.
+Welcome to my personal portfolio website repository. This site showcases selected projects, technologies I’ve worked with, and my experience as a Full-Stack Software Engineer.
 
 ## 🚀 About Me
 
-I'm a web developer with 3 years of professional experience. I've contributed to responsive web applications, custom frontend interfaces, and WordPress-based marketing websites. My work often bridges design and development, ensuring seamless experiences across devices.
+I'm a Full-Stack Software Engineer with 4+ years of professional experience. I've contributed to responsive web applications, custom frontend interfaces, and WordPress-based marketing websites. My work often bridges design and development, ensuring seamless experiences across devices.
 
 ## 🛠️ Tech Stack
 

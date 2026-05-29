@@ -3,12 +3,12 @@
     "greeting": "Hello, I'm",
     "name": "Nicolás",
     "title_prefix": "Full-Stack",
-    "title_main": "Web",
-    "title_suffix": "Developer"
+    "title_main": "Software",
+    "title_suffix": "Engineer"
   },
   "about_section": {
     "title": "About me",
-    "content_1": "I’m a Full-Stack Web Developer with a background in Computer Systems Engineering focused on building scalable web applications and interactive digital experiences. I enjoy working across the full stack — from designing user interfaces to developing backend services and real-time systems that power modern web products. In my work I focus on building reliable systems, performant interfaces, and products that provide meaningful user experiences",
+    "content_1": "I’m a Full-Stack Software Engineer with a background in Computer Systems Engineering focused on building scalable web platforms, real-time systems, and automation-driven applications. I work across the full stack — from designing performant frontend interfaces to developing backend services, real-time communication layers, and production systems that support modern interactive products.\n\nMy experience includes developing operational tools, analytics dashboards, media rendering workflows, and synchronized real-time platforms using technologies like React, TypeScript, Node.js, Firebase, and WebSockets. I focus on building reliable systems, maintainable architectures, and user experiences that solve real operational and engagement challenges.",
     "content_2": "Technologies I frequently work with:",
     "skills": [
       "React",
@@ -19,13 +19,13 @@
       "Next.js"
     ]
   },
-  "experience_section": {
+  "experience_section": { 
     "title": "Experience"
   },
   "selected_engineer_work_section": {
-    "title": "Selected Engineer Work"
+    "title": "Engineering Case Studies"
   },
   "projects_section": {
-    "title": "Personal Projects"
+    "title": "Technical Explorations"
   }
 }

@@ -7,6 +7,7 @@ interface Props {
 }
 
 export default function Navigator({ content, dynamic_content }: Props) {
+  console.log(content);
   return (
     <aside className='fixed top-40 right-20 h-lvh hidden lg:visible'>
       <ul className='styled-list'>

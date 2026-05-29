@@ -2,34 +2,30 @@
   "hero_section": {
     "greeting": "Hola, soy",
     "name": "Nicolás",
-    "title_prefix": "Desarrollador",
-    "title_main": "Web",
-    "title_suffix": ""
+    "title_prefix": "Ingeniero de Software",
+    "title_main": "",
+    "title_suffix": "Full-Stack"
   },
   "about_section": {
     "title": "Sobre mí",
-    "content_1": "Soy desarrollador web y tengo un título en Ingeniería en Sistemas. Me apasiona crear productos digitales que no solo se vean bien, sino que también ofrezcan una gran experiencia para las personas que los usan.",
-    "content_2": "Estas son algunas de las tecnologías con las que he trabajado para lograrlo:",
+    "content_1": "Soy Ingeniero de Software Full-Stack con formación en Ingeniería en Sistemas Informáticos, enfocado en el desarrollo de plataformas web escalables, sistemas en tiempo real y aplicaciones impulsadas por automatización. Trabajo a lo largo de todo el stack, desde el diseño de interfaces frontend performantes hasta el desarrollo de servicios backend, capas de comunicación en tiempo real y sistemas de producción que soportan productos interactivos modernos.\n\nMi experiencia incluye el desarrollo de herramientas operativas, dashboards analíticos, workflows de renderizado multimedia y plataformas sincronizadas en tiempo real utilizando tecnologías como React, TypeScript, Node.js, Firebase y WebSockets. Me enfoco en construir sistemas confiables, arquitecturas mantenibles y experiencias de usuario que resuelvan desafíos reales.",
+    "content_2": "Tecnologías con las que trabajo frecuentemente:",
     "skills": [
-      "HTML5 y CSS3",
-      "JavaScript/TypeScript",
-      "jQuery",
-      "React.js",
-      "Firebase",
-      "WordPress",
+      "React",
+      "TypeScript",
       "Node.js",
-      "Express.js",
-      "Bootstrap",
-      "TailwindCSS"
+      "Firebase",
+      "WebSockets",
+      "Next.js"
     ]
   },
-  "experience_section": {
+  "experience_section": { 
     "title": "Experiencia"
   },
   "selected_engineer_work_section": {
-    "title": "Trabajo Destacado de Ingeniería"
+    "title": "Casos de Estudio de Ingeniería"
   },
   "projects_section": {
-    "title": "Proyectos"
+    "title": "Exploraciones Técnicas"
   }
 }
